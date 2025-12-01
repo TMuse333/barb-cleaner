@@ -1,0 +1,291 @@
+{
+  "_id": "692bc4d1633c31b17027540a",
+  "owner": "btqcleaningservices@gmail.com",
+  "templateName": "Professional Services",
+  "websiteName": "Unnamed Website",
+  "formData": {
+    "fastTrackDescription": {
+      "answer": "*My experiences: I worked as an office manager for a cleaning office company during 2006 to 2007. I found it interesting to see how the business worked. I needed extra income so I obtained and office building to clean in the evenings. Then I became a payroll clerk during 2007-2011. I need to increase my income so I obtained a second job cleaning the provincial courthouse on Spring Garden Rd. I learned about the duties of a sheriff so I took the course to become one. I have security experience and worked there for a few weeks for my training. Unfortunately the job was only a part-time job. I started cleaning houses in 2012. My first client was so amazing, I obtained her friend as a client from her referral. Most of my clients are from referrals and word of mouth. I currently have over 20 years of experiences cleaning. I absolutely love my job and my clients. My clients have become my friends and family. They often tell me I have a gift with cleaning and I help removing stress when they come home to a clean house. They can relax from a hard day’s work and not worry about the cleaning. The kids are happy with their room nice and tidy and the pets gets some hugs and kisses while I clean. \n*My customers are from all ages, with kids and pets to elders with disabilities. \n*My unique: I take pride of my work to ensure the clients are happy with the results. I build a solid relationship with the clients, I am dependable, bonded, and reliable. My clients call me the pet whisper. I show the pets with respect and gentleness. \n*I want this website to connect with marketplace/facebook advertising. To bring in clients when I have a spot available. But I also want to put the website to sleep or to state I am fully booked. \n*My service: I clean houses the way the clients wants. Every house/owner is different. I bring all the products and gear to do the job, I clean with environmentally/pet friendly products. I have a vacuum backpack cleaner with 3 filters to ensure the dust does not enter the house. I clean your house and take away your dirt. \n*Contact info: btqcleaningservices@gmail.com  cell: 902-220-1089 facebook:      https://www.facebook.com/profile.php?id=61584047477031\n*********\n(HI THOMAS:  PLEASE FEEL FREE TO CLEAN UP ANY ERRORS OR TYPOS, MAKE IT SOUND PROFESSIONAL).\n\n"
+    },
+    "contactEmail": {
+      "answer": "btqcleaningservices@gmail.com"
+    },
+    "mainColor": {
+      "answer": "#3B82F6"
+    },
+    "baseBgColor": {
+      "answer": "#FFFFFF"
+    },
+    "textColor": {
+      "answer": "#000000"
+    },
+    "bgLayoutType": {
+      "answer": "solid"
+    },
+    "additionalInfo": {
+      "answer": "*My experiences: I worked as an office manager for a cleaning office company during 2006 to 2007. I found it interesting to see how the business worked. I needed extra income so I obtained and office building to clean in the evenings. Then I became a payroll clerk during 2007-2011. I need to increase my income so I obtained a second job cleaning the provincial courthouse on Spring Garden Rd. I learned about the duties of a sheriff so I took the course to become one. I have security experience and worked there for a few weeks for my training. Unfortunately the job was only a part-time job. I started cleaning houses in 2012. My first client was so amazing, I obtained her friend as a client from her referral. Most of my clients are from referrals and word of mouth. I currently have over 20 years of experiences cleaning. I absolutely love my job and my clients. My clients have become my friends and family. They often tell me I have a gift with cleaning and I help removing stress when they come home to a clean house. They can relax from a hard day’s work and not worry about the cleaning. The kids are happy with their room nice and tidy and the pets gets some hugs and kisses while I clean. \n*My customers are from all ages, with kids and pets to elders with disabilities. \n*My unique: I take pride of my work to ensure the clients are happy with the results. I build a solid relationship with the clients, I am dependable, bonded, and reliable. My clients call me the pet whisper. I show the pets with respect and gentleness. \n*I want this website to connect with marketplace/facebook advertising. To bring in clients when I have a spot available. But I also want to put the website to sleep or to state I am fully booked. \n*My service: I clean houses the way the clients wants. Every house/owner is different. I bring all the products and gear to do the job, I clean with environmentally/pet friendly products. I have a vacuum backpack cleaner with 3 filters to ensure the dust does not enter the house. I clean your house and take away your dirt. \n*Contact info: btqcleaningservices@gmail.com  cell: 902-220-1089 facebook:      https://www.facebook.com/profile.php?id=61584047477031\n*********\n(HI THOMAS:  PLEASE FEEL FREE TO CLEAN UP ANY ERRORS OR TYPOS, MAKE IT SOUND PROFESSIONAL).\n\n"
+    }
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "id": "carouselHero-0",
+          "type": "carouselHero",
+          "order": 0,
+          "context": "A herobanner that uses a slide show of images",
+          "componentCategory": "hero",
+          "props": {
+            "subTitle": "Welcome to BTQ Cleaning",
+            "title": "Your Reliable & Friendly Cleaning Service",
+            "description": "Experience a clean home that welcomes you back. We specialize in customized cleaning solutions with a personal touch.",
+            "buttonText": "Get Started",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "experienceCard-1",
+          "type": "experienceCard",
+          "order": 1,
+          "context": "A card to display key experiences, features, or highlights with image, text, and list items.",
+          "componentCategory": "contentPiece",
+          "props": {
+            "title": "Why Choose Us?",
+            "description": "With over 20 years of experience, we pride ourselves on delivering exceptional cleaning services that meet your unique needs. Our clients become our friends.",
+            "subTitle": "Key Highlights",
+            "buttonText": "Learn More",
+            "array": [
+              {
+                "title": "Personalized Cleaning Plans",
+                "description": "We tailor our services to fit your specific requirements and preferences."
+              },
+              {
+                "title": "Eco-Friendly Products",
+                "description": "We use environmentally friendly cleaning products that are safe for your family and pets."
+              },
+              {
+                "title": "Trustworthy & Dependable",
+                "description": "We are bonded and insured, ensuring you receive reliable and trustworthy service."
+              },
+              {
+                "title": "Stress-Free Experience",
+                "description": "Enjoy peace of mind knowing your home is clean, allowing you to relax after a long day."
+              },
+              {
+                "title": "Pet-Friendly Services",
+                "description": "We treat your pets with kindness, ensuring they feel comfortable during our cleaning."
+              }
+            ],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "textAndList-2",
+          "type": "textAndList",
+          "order": 2,
+          "context": "Provides a bulleted list of features/benefits",
+          "componentCategory": "textComponent",
+          "props": {
+            "subTitle": "Our Commitment to Quality",
+            "title": "Discover the BTQ Difference",
+            "description": "We are dedicated to providing exceptional cleaning services that enhance your living space. Here are our key benefits:",
+            "textArray": [
+              {
+                "title": "Customized Services",
+                "description": "Every home is unique, and so are our cleaning solutions tailored to your needs."
+              },
+              {
+                "title": "Experienced Team",
+                "description": "Our skilled team has over 20 years of cleaning experience, ensuring top-notch results."
+              },
+              {
+                "title": "Client Relationships",
+                "description": "We build strong relationships with our clients, fostering trust and satisfaction."
+              },
+              {
+                "title": "Flexible Scheduling",
+                "description": "We work around your schedule to provide convenient cleaning services."
+              }
+            ],
+            "array": [
+              {
+                "title": "Customized Services",
+                "description": "Every home is unique, and so are our cleaning solutions tailored to your needs."
+              },
+              {
+                "title": "Experienced Team",
+                "description": "Our skilled team has over 20 years of cleaning experience, ensuring top-notch results."
+              },
+              {
+                "title": "Client Relationships",
+                "description": "We build strong relationships with our clients, fostering trust and satisfaction."
+              },
+              {
+                "title": "Flexible Scheduling",
+                "description": "We work around your schedule to provide convenient cleaning services."
+              }
+            ],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "featureBoxes-3",
+          "type": "featureBoxes",
+          "order": 3,
+          "context": "A grid of feature boxes, each displaying an image, title, and description. Perfect for showcasing features, services, or benefits.",
+          "componentCategory": "textComponent",
+          "props": {
+            "array": [
+              {
+                "title": "Home Cleaning",
+                "description": "Thorough cleaning services for every room in your home, ensuring a fresh and tidy atmosphere."
+              },
+              {
+                "title": "Deep Cleaning",
+                "description": "In-depth cleaning that reaches every corner, perfect for seasonal refreshes or special occasions."
+              },
+              {
+                "title": "Move-In/Move-Out Cleaning",
+                "description": "Comprehensive cleaning services to ensure a spotless transition to your new home."
+              }
+            ],
+            "title": "Our Services",
+            "description": "Explore our range of cleaning services designed to meet your needs and exceed your expectations.",
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "accordion-4",
+          "type": "accordion",
+          "order": 4,
+          "context": "An interactive accordion component that displays a list of items with expandable descriptions. Supports pagination, intro text, and optional link button.",
+          "componentCategory": "textComponent",
+          "props": {
+            "array": [
+              {
+                "title": "What areas do you serve?",
+                "description": "We provide cleaning services across various neighborhoods. Please contact us for specific locations."
+              },
+              {
+                "title": "Do you bring your own supplies?",
+                "description": "Yes, we bring all necessary cleaning supplies, including eco-friendly products and equipment."
+              },
+              {
+                "title": "How do I book a service?",
+                "description": "Booking is simple! Contact us via email or phone to schedule your cleaning."
+              }
+            ],
+            "title": "Frequently Asked Questions",
+            "description": "Here are some common questions we receive from our clients.",
+            "buttonText": "Contact Us",
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "gridCarousel-5",
+          "type": "gridCarousel",
+          "order": 5,
+          "context": "A carousel used for displaying many images at once, with each one being expandable",
+          "componentCategory": "carousel",
+          "props": {
+            "subTitle": "See Our Work",
+            "title": "Transformations We Create",
+            "description": "Browse through our gallery to see the beautiful clean spaces we have achieved for our clients.",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "testimonials3-6",
+          "type": "testimonials3",
+          "order": 6,
+          "context": "Showcases previous testimonials",
+          "componentCategory": "testimonial",
+          "props": {
+            "testimonials": [
+              {
+                "name": "Sarah L.",
+                "role": "Homeowner",
+                "quote": "BTQ Cleaning Services transformed my home! I couldn't be happier with the results."
+              },
+              {
+                "name": "Mark T.",
+                "role": "Business Owner",
+                "quote": "Dependable and thorough! They always exceed my expectations."
+              },
+              {
+                "name": "Emily R.",
+                "role": "Client",
+                "quote": "I love coming home to a clean house. Thank you for your amazing service!"
+              }
+            ],
+            "title": "Client Testimonials",
+            "description": "Hear what our satisfied clients have to say about our cleaning services.",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "contactCloser-7",
+          "type": "contactCloser",
+          "order": 7,
+          "context": "Last section with a closing pitch and call-to-action form",
+          "componentCategory": "misc",
+          "props": {
+            "title": "Ready for a Spotless Home?",
+            "description": "Contact us today to schedule your cleaning service. Experience the joy of a clean space tailored to your needs. We look forward to serving you!",
+            "buttonText": "Get in Touch",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        }
+      ],
+      "text": []
+    }
+  ],
+  "status": "draft",
+  "createdAt": "2025-11-30T04:15:13.159Z",
+  "updatedAt": "2025-11-30T04:15:13.159Z",
+  "__v": 0
+}
