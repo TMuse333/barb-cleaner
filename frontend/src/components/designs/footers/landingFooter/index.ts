@@ -2,7 +2,9 @@ import LandingFooter from "./landingFooter";
 import { BaseFooterProps } from "@/types/navbar";
 import { Facebook } from "lucide-react";
 
-export interface LandingFooterProps extends BaseFooterProps {}
+export interface LandingFooterProps extends BaseFooterProps {
+  real?:boolean
+}
 
 export const defaultLandingFooterProps: LandingFooterProps = {
   brandName: "BTQ Cleaning",
@@ -13,6 +15,7 @@ export const defaultLandingFooterProps: LandingFooterProps = {
   navItems: [],
   socialLinks: [],
   developerCredit: undefined,
+  real:true
 };
 
 export default LandingFooter;

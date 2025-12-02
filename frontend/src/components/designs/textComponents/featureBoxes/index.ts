@@ -5,6 +5,7 @@ import {  BaseComponentProps, EditableComponent, ImageProp } from "@/types";
 
 
 export interface FeatureBoxesProps extends Partial<BaseComponentProps> {
+  real?:boolean
   // Uses array from BaseComponentProps for feature boxes (title/description)
   // Uses images from BaseComponentProps, keyed by index (e.g., "0", "1", "2")
 }
@@ -50,6 +51,7 @@ export const defaultFeatureBoxesProps: Required<Omit<FeatureBoxesProps, 'array' 
     "2": { src: "/placeholder.webp", alt: "Feature Three" },
     "3": { src: "/placeholder.webp", alt: "Feature Four" },
   },
+  real:true
  
 };
 

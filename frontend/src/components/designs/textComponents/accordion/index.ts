@@ -5,6 +5,7 @@ import { BaseComponentProps, EditableComponent } from "@/types";
 
 
 export interface AccordionProps extends Omit<Partial<BaseComponentProps>, 'items'> {
+  real?:boolean
   // Uses array from BaseComponentProps for accordion items
   // Each item should be StandardText type: { title: string, description: string }
 }
@@ -48,6 +49,6 @@ export const defaultAccordionProps: Required<Omit<AccordionProps, 'array'>> & {
     },
   ],
   images: {},
-
+  real:true
 };
 

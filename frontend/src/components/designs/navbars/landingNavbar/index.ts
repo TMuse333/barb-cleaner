@@ -2,7 +2,9 @@ import LandingNavbar from "./landingNavbar";
 import { NavbarProps } from "@/types/navbar";
 
 export type { NavbarProps };
-export interface LandingNavbarProps extends NavbarProps {}
+export interface LandingNavbarProps extends NavbarProps {
+  real?:boolean
+}
 
 export const defaultLandingNavbarProps: LandingNavbarProps = {
   logoSrc: undefined,
@@ -19,6 +21,7 @@ export const defaultLandingNavbarProps: LandingNavbarProps = {
   bgLayout: {
     type: "solid",
   },
+
 };
 
 export default LandingNavbar;
