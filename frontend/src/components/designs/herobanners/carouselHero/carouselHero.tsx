@@ -107,7 +107,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
                 </div>
                 <div className="absolute bottom-16 left-1/2 -translate-x-1/2 w-full px-8">
                   <p
-                    className="text-white text-center bg-black/60 p-3 rounded-lg text-lg font-medium"
+                    className="text-white text-center bg-white p-3 rounded-lg text-lg font-medium"
                     style={{ color: safeTextColor }}
                   >
                     {safeItems[currentIndex]?.description || ""}
