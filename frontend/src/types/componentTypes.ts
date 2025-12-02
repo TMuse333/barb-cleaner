@@ -156,3 +156,11 @@ export type EditableComponent = {
 
   category: ComponentCategory
 };
+
+export type CarouselItem = {
+  title?: string;
+  description?: string;
+  buttonText?: string;
+  extraInfo?:string
+  image:ImageProp
+ }

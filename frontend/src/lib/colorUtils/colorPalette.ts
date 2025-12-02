@@ -6,7 +6,9 @@ export interface DerivedColorPalette extends BaseColorProps {
     textHighlightColor: string;    // Same as mainColor for consistency
     gradientBg: string[];          // Array of shades from mainColor
     lightAccent: string;           // Lighter version for hover states
-    darkAccent: string
+    darkAccent: string,
+    whiteText:string,
+    darkText:string
   }
 
   export function deriveColorPalette(
@@ -45,6 +47,12 @@ export interface DerivedColorPalette extends BaseColorProps {
         lightenOrDarken(gradientBase, 120),
       ];
     }
+
+
+     const textColors = {
+      whiteText: "#FFFFFF", // pure white, readable on dark backgrounds
+      darkText: "#111111",  // very dark gray/black, readable on light backgrounds
+    };
   
     return {
       baseBgColor,
@@ -56,6 +64,8 @@ export interface DerivedColorPalette extends BaseColorProps {
       gradientBg,
       lightAccent: lightenHexColor(mainColor, 30),
       darkAccent: darkenHexColor(mainColor, 30),
+      whiteText:textColors.whiteText,
+      darkText: textColors.darkText
     };
   }
   
