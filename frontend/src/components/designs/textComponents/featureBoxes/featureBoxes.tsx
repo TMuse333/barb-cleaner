@@ -4,25 +4,30 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useInView, motion, Variants } from "framer-motion";
+import { LucideIcon, Home, Sparkles, Heart } from "lucide-react";
 import { defaultFeatureBoxesProps, FeatureBoxesProps } from ".";
 import { deriveColorPalette, useAnimatedGradient } from "@/lib/colorUtils";
 
 interface BoxProps {
-  imageSrc: string;
-  imageAlt: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  icon?: LucideIcon;
   title: string;
   description: string;
   boxColor: string;
   boxTextColor: string;
+  mainColor: string;
 }
 
 const FeatureBox: React.FC<BoxProps> = ({
   imageSrc,
   imageAlt,
+  icon: Icon,
   title,
   description,
   boxColor,
   boxTextColor,
+  mainColor,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 1 });
@@ -67,15 +72,32 @@ const FeatureBox: React.FC<BoxProps> = ({
         borderColor: boxTextColor,
       }}
     >
-      <motion.div
-        variants={childVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        transition={{ type: "spring" as const, stiffness: 500, damping: 7, delay: 0.1 }}
-        className="w-[30px] sm:w-[35px] md:h-[40px] mx-auto mb-4"
-      >
-        <Image src={imageSrc} alt={imageAlt} width={600} height={1300} className="object-contain" />
-      </motion.div>
+      {Icon ? (
+        <motion.div
+          variants={childVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ type: "spring" as const, stiffness: 500, damping: 7, delay: 0.1 }}
+          className="flex justify-center mb-4"
+        >
+          <div 
+            className="p-3 rounded-lg"
+            style={{ backgroundColor: `${mainColor}15` }}
+          >
+            <Icon size={40} style={{ color: mainColor }} />
+          </div>
+        </motion.div>
+      ) : imageSrc ? (
+        <motion.div
+          variants={childVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ type: "spring" as const, stiffness: 500, damping: 7, delay: 0.1 }}
+          className="w-[30px] sm:w-[35px] md:h-[40px] mx-auto mb-4"
+        >
+          <Image src={imageSrc} alt={imageAlt ?? title} width={600} height={1300} className="object-contain" />
+        </motion.div>
+      ) : null}
 
       <motion.h3
         className="text-lg font-semibold"
@@ -143,9 +165,29 @@ const FeatureBoxes: React.FC<FeatureBoxesProps> = (props) => {
     const imageKey = String(index);
     const image = images?.[imageKey];
     return {
-      src: image?.src ?? "/placeholder.webp",
+      src: image?.src,
       alt: image?.alt ?? `Feature ${index + 1}`,
     };
+  };
+
+  // Map icons based on title keywords or index
+  const getIconForFeature = (title: string, index: number): LucideIcon | undefined => {
+    const titleLower = title.toLowerCase();
+    
+    // Check for keywords in title
+    if (titleLower.includes("regular") || titleLower.includes("home") || titleLower.includes("standard")) {
+      return Home;
+    }
+    if (titleLower.includes("deep") || titleLower.includes("thorough") || titleLower.includes("detailed")) {
+      return Sparkles;
+    }
+    if (titleLower.includes("special") || titleLower.includes("custom") || titleLower.includes("pet") || titleLower.includes("elder")) {
+      return Heart;
+    }
+    
+    // Fallback to index-based icons
+    const iconMap: LucideIcon[] = [Home, Sparkles, Heart];
+    return iconMap[index % iconMap.length];
   };
 
   return (
@@ -184,15 +226,18 @@ const FeatureBoxes: React.FC<FeatureBoxesProps> = (props) => {
       <section className="flex flex-col mx-auto justify-center items-center mt-6 sm:grid grid-cols-2 max-w-[1200px]">
         {items.map((item, index) => {
           const image = getImageForIndex(index);
+          const Icon = getIconForFeature(item.title, index);
           return (
             <FeatureBox
               key={index}
               imageSrc={image.src}
               imageAlt={image.alt}
+              icon={Icon}
               title={item.title}
               description={item.description}
               boxColor={`${colors.mainColor}20`}
               boxTextColor={colors.textColor ?? safeTextColor}
+              mainColor={safeMainColor}
             />
           );
         })}

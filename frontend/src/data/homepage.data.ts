@@ -6,6 +6,8 @@ import { AccordionProps } from "@/components/designs/textComponents/accordion";
 import { GridCarouselProps } from "@/components/designs/carousels/gridCarousel";
 import { Testimonials3Props } from "@/components/designs/testimonials/testimonials3";
 import { ContactCloserProps } from "@/components/designs/miscellaneous/contactCloser";
+import { NavbarProps, BaseFooterProps } from "@/types/navbar";
+import { Facebook } from "lucide-react";
 
 export const carouselHeroData: CarouselHeroProps = {
   subTitle: "Welcome to BTQ Cleaning",
@@ -286,4 +288,95 @@ export const contactCloserData: ContactCloserProps = {
   bgLayout: {
     type: "solid"
   }
+};
+
+export const navbarData: NavbarProps = {
+  logoText: "BTQ Cleaning",
+  tabs: [
+    {
+      type: "scroll",
+      label: "Home",
+      scrollTo: "hero"
+    },
+    {
+      type: "scroll",
+      label: "About",
+      scrollTo: "about"
+    },
+    {
+      type: "scroll",
+      label: "Services",
+      scrollTo: "services"
+    },
+    {
+      type: "scroll",
+      label: "Gallery",
+      scrollTo: "gallery"
+    },
+    {
+      type: "scroll",
+      label: "Testimonials",
+      scrollTo: "testimonials"
+    },
+    {
+      type: "scroll",
+      label: "Contact",
+      scrollTo: "contact"
+    }
+  ],
+  sticky: true,
+  alignment: "left",
+  buttonText: "Get Started",
+  ctaDestination: "contact",
+  mainColor: "#3B82F6",
+  textColor: "#000000",
+  baseBgColor: "#FFFFFF",
+  bgLayout: {
+    type: "solid"
+  }
+};
+
+export const footerData: BaseFooterProps = {
+  brandName: "BTQ Cleaning",
+  contact: {
+    email: "btqcleaningservices@gmail.com",
+    phone: "902-220-1089"
+  },
+  navItems: [
+    {
+      name: "Home",
+      href: "#hero"
+    },
+    {
+      name: "About",
+      href: "#about"
+    },
+    {
+      name: "Services",
+      href: "#services"
+    },
+    {
+      name: "Gallery",
+      href: "#gallery"
+    },
+    {
+      name: "Testimonials",
+      href: "#testimonials"
+    },
+    {
+      name: "FAQ",
+      href: "#faq"
+    },
+    {
+      name: "Contact",
+      href: "#contact"
+    }
+  ],
+  socialLinks: [
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61584047477031",
+      icon: Facebook
+    }
+  ]
 };
