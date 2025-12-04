@@ -201,36 +201,36 @@ export const gridCarouselData: GridCarouselProps = {
         alt: "Clean and organized living space"
       }
     },
-    {
-      image: {
-        src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084631_resized-wNtSVgSn9is2SFzSWdFZm8UXFhi72p.jpg",
-        alt: "Spotless bathroom transformation"
-      }
-    },
+    // {
+    //   image: {
+    //     src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084631_resized-wNtSVgSn9is2SFzSWdFZm8UXFhi72p.jpg",
+    //     alt: "Spotless bathroom transformation"
+    //   }
+    // },
     {
       image: {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084654_resized-1lBcw6JvrJFAct1aVahh77sTOTwCae.jpg",
         alt: "Professional kitchen cleaning"
       }
     },
-    {
-      image: {
-        src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084654_resized-TPsES7RNyd3QXPQ8YygZbQj8MnDVUj.jpg",
-        alt: "Immaculate bedroom organization"
-      }
-    },
+    // {
+    //   image: {
+    //     src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084654_resized-TPsES7RNyd3QXPQ8YygZbQj8MnDVUj.jpg",
+    //     alt: "Immaculate bedroom organization"
+    //   }
+    // },
     {
       image: {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084848_resized-Lcvt64PSXzOKpzBLwWKg14Gn79ReqA.jpg",
         alt: "Sparkling clean home interior"
       }
     },
-    {
-      image: {
-        src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084848_resized-qHaKunaqI45f8WzJymes8fZ4cZTIr0.jpg",
-        alt: "Perfectly organized space"
-      }
-    },
+    // {
+    //   image: {
+    //     src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084848_resized-qHaKunaqI45f8WzJymes8fZ4cZTIr0.jpg",
+    //     alt: "Perfectly organized space"
+    //   }
+    // },
     {
       image: {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-yt5zbS0MrJnxWrC7ibNlIm50JW3t6K.jpg",

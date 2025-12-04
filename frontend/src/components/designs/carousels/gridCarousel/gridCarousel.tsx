@@ -265,13 +265,13 @@ const GridCarousel:React.FC<GridCarouselProps> = (props) => {
                       max-h-[624px]
                       md:max-h-[750px]
                       md:max-w-[1200px]
-                 
+                
                       z-[29]
                       
                      `
                       : `w-[100vw] 
                       max-w-[1400px] 
-                    
+                    object-contain
                        ml-auto mr-auto h-[100vh]
                        
                       
