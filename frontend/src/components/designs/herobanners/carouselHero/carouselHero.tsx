@@ -53,6 +53,21 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
     return () => clearInterval(interval);
   }, [tabProgress]);
 
+  // Scroll to contact section
+  const handleScrollToContact = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      const navbarHeight = 80; // Approximate navbar height in pixels
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <motion.section
       className="w-full"
@@ -74,14 +89,32 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
               {title}
             </h1>
           )}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex justify-start my-4"
+          >
+            <Image
+              src="/logo.png"
+              alt="BTQ Cleaning Services Logo"
+              width={200}
+              height={200}
+              className="object-contain max-w-[200px] max-h-[200px]"
+              priority
+            />
+          </motion.div>
           {description && <p className="text-lg md:text-xl" style={{ color: safeTextColor }}>{description}</p>}
           {buttonText && (
-            <button
-              className="mt-6 px-8 py-3 rounded-xl font-bold text-lg"
+            <motion.button
+              onClick={handleScrollToContact}
+              whileHover={{ scale: 1.05, boxShadow: `0 10px 30px ${safeMainColor}40` }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-6 px-8 py-3 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-lg"
               style={{ backgroundColor: safeMainColor, color: safeBaseBgColor }}
             >
               {buttonText}
-            </button>
+            </motion.button>
           )}
         </section>
 
