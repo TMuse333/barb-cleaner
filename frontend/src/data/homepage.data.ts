@@ -139,6 +139,11 @@ export const featureBoxesData: FeatureBoxesProps = {
       type: "StandardText",
       title: "Specialized Cleaning",
       description: "Serving all clients—from families with kids and pets to elders with disabilities. Your pets get extra love while I work, and your home gets the attention it deserves."
+    },
+    {
+      type: "StandardText",
+      title: "Move-In/Move-Out Cleaning",
+      description: "Comprehensive Halifax house cleaning services for your transition. Whether you're moving in or moving out, we ensure your space is spotless and ready for your new beginning."
     }
   ],
   title: "Our Services",
