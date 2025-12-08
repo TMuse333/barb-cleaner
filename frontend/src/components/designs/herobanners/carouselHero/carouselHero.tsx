@@ -73,9 +73,9 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
       className="w-full"
       style={{ background: backgroundImage }}
     >
-      <section className="flex flex-col md:flex-row md:h-screen relative items-center mx-auto max-w-[2200px] md:mt-[-4rem] gap-8 px-4">
+      <section className="flex flex-col md:flex-row md:h-screen relative items-center mx-auto max-w-[2200px] md:mt-[-4rem] gap-4 px-4">
         {/* Left Text Section */}
-        <section className="flex flex-col md:w-[40vw] justify-center items-start py-8 px-6 space-y-6">
+        <section className="flex flex-col md:w-[40vw] justify-center items-start py-8 px-6 space-y-3">
           {subTitle && <span className="text-xl font-medium" style={{ color: safeMainColor }}>{subTitle}</span>}
           {title && (
             <h1
@@ -93,7 +93,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex justify-start my-4"
+            className="flex justify-start my-2"
           >
             <Image
               src="/logo.png"
@@ -104,7 +104,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
               priority
             />
           </motion.div>
-          {description && <p className="text-lg md:text-xl" style={{ color: safeTextColor }}>{description}</p>}
+          {description && <p className="text-base md:text-lg whitespace-pre-line leading-tight" style={{ color: safeTextColor }}>{description}</p>}
           {buttonText && (
             <motion.button
               onClick={handleScrollToContact}
@@ -135,7 +135,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
                     src={safeItems[currentIndex]?.image?.src ?? "/placeholder.webp"}
                     alt={safeItems[currentIndex]?.image?.alt ?? "Slide"}
                     fill
-                    className="object-cover"
+                    className={safeItems[currentIndex]?.objectContain ? "object-contain" : "object-cover"}
                   />
                 </div>
                 <div className="absolute bottom-16 left-1/2 -translate-x-1/2 w-full px-8">

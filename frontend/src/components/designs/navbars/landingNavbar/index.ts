@@ -2,11 +2,11 @@ import LandingNavbar from "./landingNavbar";
 import { NavbarProps } from "@/types/navbar";
 
 export type { NavbarProps };
-export interface LandingNavbarProps extends NavbarProps {
+export interface LandingNavbar2Props extends NavbarProps {
   real?:boolean
 }
 
-export const defaultLandingNavbarProps: LandingNavbarProps = {
+export const defaultLandingNavbar2Props: LandingNavbar2Props = {
   logoSrc: undefined,
   logoAlt: "Logo",
   logoText: "BTQ Cleaning",

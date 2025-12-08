@@ -12,9 +12,26 @@ import { Facebook } from "lucide-react";
 export const carouselHeroData: CarouselHeroProps = {
   subTitle: "Professional Halifax House Cleaning Services",
   title: "Your Reliable & Friendly Cleaning Service",
-  description: "Experience a clean home that welcomes you back. As premier Halifax house cleaning services, we specialize in customized cleaning solutions with a personal touch.",
+  description: `Are you tired of:
+
+ the bigger Cleaning Companies that promise top quality Cleaning?
+ not knowing who the cleaners are?
+
+ not receiving the quality cleaning you expect for your hard earned money?
+ 
+Well! Look no further! I have the solution for you!
+I specialize in customized cleaning solutions with a personal touch and comparable prices.`,
   buttonText: "Get Started",
   items: [
+    {
+      image: {
+        src:'https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230225_154832_resized-bmZv5sMrMjfwPHyNHU7gLqH1dyMiN5.jpg',
+        alt:'Barb holding a bird',
+        
+      },
+      description: "Pet friendly cleaning services",
+      objectContain: true
+    },
     {
       image: {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084631_resized-5sBNryIVUI6tFavIaKjfwaZx2JJcxx.jpg",
@@ -27,7 +44,7 @@ export const carouselHeroData: CarouselHeroProps = {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-5U3djxW6WBu2pk4VaBMf0DNJ7Gp6QN.jpg",
         alt: "Professional cleaning service in action"
       },
-      description: "Over 20 years of Halifax house cleaning services experience, building lasting client relationships"
+      description: "Over 20+ years of house cleaning experience, building lasting client relationships."
     },
     {
       image: {
@@ -35,7 +52,14 @@ export const carouselHeroData: CarouselHeroProps = {
         alt: "Sparkling clean kitchen"
       },
       description: "I clean your house and take away your dirt"
-    }
+    },
+    {
+      image: {
+        src:'https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230428_111518_resized%281%29-DZIejTOayAlmTIKbRLiKf4mcwvOXJL.jpg',
+        alt:'Dog at the top of the stairs'
+      },
+      description: "Pet friendly cleaning services"
+    },
   ],
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -46,8 +70,13 @@ export const carouselHeroData: CarouselHeroProps = {
 };
 
 export const experienceCardData: ExperienceCardProps = {
-  title: "Why Choose Us?",
-  description: "With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my Halifax house cleaning services business has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.",
+  title: "Why Choose BTQ Cleaning Services?",
+  description: `With over 20 years of cleaning experience, I&#39;ve built lasting relationships with clients who have become friends and
+family. Starting in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I
+have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a
+hard day&#39;s work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and
+kisses while I work.`,
+
   subTitle: "Trusted Halifax House Cleaning Services",
   buttonText: "Learn More",
   images: {
@@ -88,8 +117,8 @@ export const experienceCardData: ExperienceCardProps = {
 
 export const textAndListData: TextAndListProps = {
   subTitle: "Quality Halifax House Cleaning Services",
-  title: "Discover the BTQ Difference",
-  description: "I clean houses the way you want—every home and owner is different. As your trusted Halifax house cleaning services provider, I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn't enter your house. I clean your house and take away your dirt.",
+  title: "Discover the BTQ Cleaning Services Difference",
+  description: `I clean houses the way you want—every home and owner is different. As your trusted Halifax house cleaning services provider, I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn't enter your house. I clean your house and take away your dirt.`,
   images: {
     main: {
       src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-E95WQzSZzrr5SFukh9W43XO6q6HZG6.jpg",
@@ -99,11 +128,17 @@ export const textAndListData: TextAndListProps = {
   textArray: [
     {
       title: "Customized for Every Home",
-      description: "Every home is unique, and so are our cleaning solutions. I tailor my approach to match your specific preferences and needs."
+      description: `
+      Every home is unique, every client/family is different, so is my cleaning solutions. I tailor my approach to
+match your specific preferences and needs.
+      `
     },
     {
       title: "20+ Years of Experience",
-      description: "Started cleaning houses in 2012, with over 20 years of Halifax house cleaning services experience total. Most clients come from referrals and word of mouth."
+      description: `
+      Started cleaning houses in 2012, with over 20 years of house cleaning services experience total. Most clients
+come from referrals and word of mouth.
+      `
     },
     {
       title: "All Your Needs Covered",
@@ -128,12 +163,25 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Regular Home Cleaning",
-      description: "Thorough Halifax house cleaning services for every room in your home, customized to your preferences. I bring all products and gear, including eco-friendly and pet-friendly supplies."
+      description: `Attention to detail for every room in your home, customized to your preferences. I bring all the products and gear,
+including eco-friendly and pet-friendly supplies.`
     },
     {
       type: "StandardText",
       title: "Deep Cleaning",
-      description: "In-depth Halifax house cleaning services that reach every corner, perfect for seasonal refreshes or special occasions. Using advanced vacuum backpack technology with 3 filters to ensure dust-free results."
+      description: `
+      During the seasons changing or special events, I provide detail cleaning for:
+ interior windows/frames,
+ doors &amp; frames,
+ baseboards,
+ entry closets floors,
+ oven interior &amp; exterior,
+ fridge interior &amp; exterior,
+ microwave interior &amp; exterior,
+ Laundry done but not put away,
+ change bedding,
+ dishes and put away,
+ kitchen cupboards &amp; drawers.`
     },
     {
       type: "StandardText",
@@ -143,11 +191,13 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Move-In/Move-Out Cleaning",
-      description: "Comprehensive Halifax house cleaning services for your transition. Whether you're moving in or moving out, we ensure your space is spotless and ready for your new beginning."
+      description: `Comprehensive cleaning services for your transition. Whether you’re moving in or moving out, I ensure your
+space is spotless and ready for your new beginning.`
     }
   ],
   title: "Our Services",
-  description: "Every home is unique, and so are our Halifax house cleaning services. I clean houses the way you want, bringing all the products and gear needed to do the job right.",
+  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bringing all the products
+and gear needed to do the job right.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
   baseBgColor: "#FFFFFF",
@@ -161,7 +211,7 @@ export const accordionData: AccordionProps = {
     {
       type: "StandardText",
       title: "What areas do you serve?",
-      description: "Our Halifax house cleaning services cover various neighborhoods throughout Halifax and surrounding areas. Please contact us at 902-220-1089 or btqcleaningservices@gmail.com for specific locations."
+      description: "BTQ Cleaning Services cover various neighborhoods throughout Halifax and surrounding areas. Please contact us at 902-220-1089 or btqcleaningservices@gmail.com for specific locations."
     },
     {
       type: "StandardText",
@@ -171,12 +221,12 @@ export const accordionData: AccordionProps = {
     {
       type: "StandardText",
       title: "How do I book a service?",
-      description: "Booking is simple! Call us at 902-220-1089, email btqcleaningservices@gmail.com, or message us on Facebook. We'll work around your schedule to find a time that's convenient for you."
+      description: "Booking is simple! Call 902-220-1089, email btqcleaningservices@gmail.com, or message me on Facebook. We'll work together to find a schedule that is convenient for both of us."
     },
     {
       type: "StandardText",
       title: "Are you bonded and insured?",
-      description: "Yes, I am bonded, insured, dependable, and reliable. I take pride in my work and build solid relationships with clients based on trust and satisfaction."
+      description: "Yes, I am bonded, dependable, and reliable. I take pride in my work and build solid relationships with clients based on trust and satisfaction. Upon request, I can provide a criminal background check record."
     },
     {
       type: "StandardText",
@@ -185,7 +235,7 @@ export const accordionData: AccordionProps = {
     }
   ],
   title: "Frequently Asked Questions",
-  description: "Here are some common questions we receive from our clients.",
+  description: "Here are some common questions I receive from our clients.",
   buttonText: "Contact Us",
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -196,9 +246,9 @@ export const accordionData: AccordionProps = {
 };
 
 export const gridCarouselData: GridCarouselProps = {
-  subTitle: "Halifax House Cleaning Services Gallery",
-  title: "Transformations We Create",
-  description: "Browse through our gallery to see the beautiful clean spaces our Halifax house cleaning services have achieved for our clients.",
+  subTitle: "BTQ Cleaning Services Gallery",
+  title: "Transformations I Create",
+  description: "Browse through my gallery to see the beautiful clean spaces my cleaning services have achieved for my clients.",
   items: [
     {
       image: {

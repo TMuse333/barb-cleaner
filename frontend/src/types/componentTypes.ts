@@ -163,4 +163,5 @@ export type CarouselItem = {
   buttonText?: string;
   extraInfo?:string
   image:ImageProp
+  objectContain?: boolean;
  }
