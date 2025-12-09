@@ -116,6 +116,7 @@ const FeatureBox: React.FC<BoxProps> = ({
         animate={isInView ? "visible" : "hidden"}
         transition={{ type: "spring" as const, stiffness: 500, damping: 7, delay: 0.3 }}
         style={{ color: boxTextColor }}
+        className="whitespace-pre-line"
       >
         {description}
       </motion.p>

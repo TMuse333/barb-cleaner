@@ -10,9 +10,10 @@ import { NavbarProps, BaseFooterProps } from "@/types/navbar";
 import { Facebook } from "lucide-react";
 
 export const carouselHeroData: CarouselHeroProps = {
-  subTitle: "Professional Halifax House Cleaning Services",
-  title: "Your Reliable & Friendly Cleaning Service",
+  subTitle: "",
+  title: "Attention to Detail is the Key! No other Cleaning will do.",
   description: `Are you tired of:
+  
 
  the bigger Cleaning Companies that promise top quality Cleaning?
  not knowing who the cleaners are?
@@ -71,11 +72,7 @@ I specialize in customized cleaning solutions with a personal touch and comparab
 
 export const experienceCardData: ExperienceCardProps = {
   title: "Why Choose BTQ Cleaning Services?",
-  description: `With over 20 years of cleaning experience, I&#39;ve built lasting relationships with clients who have become friends and
-family. Starting in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I
-have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a
-hard day&#39;s work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and
-kisses while I work.`,
+  description: `With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
 
   subTitle: "Trusted Halifax House Cleaning Services",
   buttonText: "Learn More",
@@ -118,7 +115,9 @@ kisses while I work.`,
 export const textAndListData: TextAndListProps = {
   subTitle: "",
   title: "Discover the BTQ Cleaning Services Difference",
-  description: `I clean your home the way you want—every home and owner is different. As your trusted Halifax house cleaning services provider, I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn't enter your home. I clean your home and take away your dirt!`,
+  description: `I clean your home the way you want—every home and owner is different. I bring all the products and gear needed to do
+the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures
+dust doesn’t enter your home. I clean your home and take away your dirt!`,
   images: {
     main: {
       src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-E95WQzSZzrr5SFukh9W43XO6q6HZG6.jpg",
@@ -129,15 +128,13 @@ export const textAndListData: TextAndListProps = {
     {
       title: "Customized for Every Home",
       description: `
-      Every home is unique, every client/family is different, so is my cleaning solutions. I tailor my approach to
-match your specific preferences and needs.
+      Every home is unique, every client/family is different, so is my cleaning solutions. I tailor my approach to match your specific preferences and needs.
       `
     },
     {
       title: "20+ Years of Experience",
       description: `
-      Started cleaning houses in 2012, with over 20 years of house cleaning services experience total. Most clients
-come from referrals and word of mouth.
+      Started cleaning houses in 2012, with over 20 years of house cleaning services experience total. Most clients come from referrals and word of mouth.
       `
     },
     {
@@ -163,25 +160,12 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Regular Home Cleaning",
-      description: `Attention to detail for every room in your home, customized to your preferences. I bring all the products and gear,
-including eco-friendly and pet-friendly supplies.`
+      description: `Attention to detail for every room in your home, customized to your preferences. I bring all the products and gear, including eco-friendly and pet-friendly supplies.`
     },
     {
       type: "StandardText",
       title: "Deep Cleaning",
-      description: `
-      During the seasons changing or special events, I provide detail cleaning for:
- interior windows/frames,
- doors &amp; frames,
- baseboards,
- entry closets floors,
- oven interior &amp; exterior,
- fridge interior &amp; exterior,
- microwave interior &amp; exterior,
- Laundry done but not put away,
- change bedding,
- dishes and put away,
- kitchen cupboards &amp; drawers.`
+      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, laundry done but not put away, change bedding, dishes and put away, kitchen cupboards & drawers.`
     },
     {
       type: "StandardText",
@@ -191,13 +175,11 @@ including eco-friendly and pet-friendly supplies.`
     {
       type: "StandardText",
       title: "Move-In/Move-Out Cleaning",
-      description: `Comprehensive cleaning services for your transition. Whether you’re moving in or moving out, I ensure your
-space is spotless and ready for your new beginning.`
+      description: `Comprehensive cleaning services for your transition. Whether you're moving in or moving out, I ensure your space is spotless and ready for your new beginning.`
     }
   ],
   title: "My Services",
-  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bring all the products
-and gear needed to do the job right.`,
+  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bring all the products and gear needed to do the job right.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
   baseBgColor: "#FFFFFF",
@@ -221,7 +203,8 @@ export const accordionData: AccordionProps = {
     {
       type: "StandardText",
       title: "How do I book a service?",
-      description: "Booking is simple! Call 902-220-1089, email btqcleaningservices@gmail.com, or message me on Facebook. We'll work together to find a schedule that is convenient for both of us."
+      description: `Booking is simple! Call 902-220-1089, email btqcleaningservices@gmail.com, or message me on Facebook.
+we'll work together to find a schedule that is convenient for both of us.`
     },
     {
       type: "StandardText",

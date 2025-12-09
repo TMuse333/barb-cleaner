@@ -88,12 +88,20 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
               />
             )}
             {logoText && (
-              <span
-                className="text-xl md:text-2xl font-bold"
-                style={{ color: mainColor ?? "#3B82F6" }}
-              >
-                {logoText}
-              </span>
+              <div className="flex flex-col">
+                <span
+                  className="text-xl md:text-2xl font-bold"
+                  style={{ color: mainColor ?? "#3B82F6" }}
+                >
+                  {logoText}
+                </span>
+                <span
+                  className="text-[10px] md:text-xs opacity-70"
+                  style={{ color: textColor ?? "#000000" }}
+                >
+                  (Barbs Top Quality Cleaning)
+                </span>
+              </div>
             )}
           </div>
 
