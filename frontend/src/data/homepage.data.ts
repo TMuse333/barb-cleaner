@@ -116,9 +116,9 @@ kisses while I work.`,
 };
 
 export const textAndListData: TextAndListProps = {
-  subTitle: "Quality Halifax House Cleaning Services",
+  subTitle: "",
   title: "Discover the BTQ Cleaning Services Difference",
-  description: `I clean houses the way you want—every home and owner is different. As your trusted Halifax house cleaning services provider, I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn't enter your house. I clean your house and take away your dirt.`,
+  description: `I clean your home the way you want—every home and owner is different. As your trusted Halifax house cleaning services provider, I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn't enter your home. I clean your home and take away your dirt!`,
   images: {
     main: {
       src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-E95WQzSZzrr5SFukh9W43XO6q6HZG6.jpg",
@@ -195,8 +195,8 @@ including eco-friendly and pet-friendly supplies.`
 space is spotless and ready for your new beginning.`
     }
   ],
-  title: "Our Services",
-  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bringing all the products
+  title: "My Services",
+  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bring all the products
 and gear needed to do the job right.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -314,6 +314,18 @@ export const gridCarouselData: GridCarouselProps = {
       image: {
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230315_191800_resized-1oHBlFWjnb7dxevCJ80r3LO12NARrh.jpg",
         alt: "Spotless Halifax house cleaning services result"
+      }
+    },
+    {
+      image: {
+        src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230225_154832_resized-bmZv5sMrMjfwPHyNHU7gLqH1dyMiN5.jpg",
+        alt: "Barb holding a bird - pet-friendly cleaning services"
+      }
+    },
+    {
+      image: {
+        src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230428_111518_resized%281%29-DZIejTOayAlmTIKbRLiKf4mcwvOXJL.jpg",
+        alt: "Dog at the top of the stairs - pet-friendly cleaning services"
       }
     }
   ],
@@ -457,5 +469,9 @@ export const footerData: BaseFooterProps = {
       href: "https://www.facebook.com/profile.php?id=61584047477031",
       icon: Facebook
     }
-  ]
+  ],
+  developerCredit: {
+    name: "By focusflow software",
+    href: "https://focusflowsoftware.com"
+  }
 };
