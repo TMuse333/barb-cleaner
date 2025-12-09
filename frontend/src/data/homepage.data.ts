@@ -72,7 +72,7 @@ I specialize in customized cleaning solutions with a personal touch and comparab
 
 export const experienceCardData: ExperienceCardProps = {
   title: "Why Choose BTQ Cleaning Services?",
-  description: `With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
+  description: `With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my cleaning service has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
 
   subTitle: "Trusted Halifax House Cleaning Services",
   buttonText: "Learn More",
@@ -128,7 +128,7 @@ dust doesn’t enter your home. I clean your home and take away your dirt!`,
     {
       title: "Customized for Every Home",
       description: `
-      Every home is unique, every client/family is different, so is my cleaning solutions. I tailor my approach to match your specific preferences and needs.
+      Every home is unique, every client/family is different, so is my cleaning solution. I tailor my approach to match your specific preferences and needs.
       `
     },
     {
@@ -165,7 +165,7 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Deep Cleaning",
-      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, laundry done but not put away, change bedding, dishes and put away, kitchen cupboards & drawers.`
+      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, change bedding, dishes and put away, kitchen cupboards & drawers.`
     },
     {
       type: "StandardText",
@@ -179,7 +179,7 @@ export const featureBoxesData: FeatureBoxesProps = {
     }
   ],
   title: "My Services",
-  description: `Every home is unique, and so is my cleaning services. I clean houses the way you want, I also bring all the products and gear needed to do the job right.`,
+  description: `Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the products and gear needed to do the job right.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
   baseBgColor: "#FFFFFF",
@@ -204,7 +204,7 @@ export const accordionData: AccordionProps = {
       type: "StandardText",
       title: "How do I book a service?",
       description: `Booking is simple! Call 902-220-1089, email btqcleaningservices@gmail.com, or message me on Facebook.
-we'll work together to find a schedule that is convenient for both of us.`
+We'll work together to find a schedule that is convenient for both of us.`
     },
     {
       type: "StandardText",
@@ -231,7 +231,7 @@ we'll work together to find a schedule that is convenient for both of us.`
 export const gridCarouselData: GridCarouselProps = {
   subTitle: "BTQ Cleaning Services Gallery",
   title: "Transformations I Create",
-  description: "Browse through my gallery to see the beautiful clean spaces my cleaning services have achieved for my clients.",
+  description: "Browse through my gallery to see the beautiful clean spaces my cleaning service have achieved for my clients.",
   items: [
     {
       image: {
