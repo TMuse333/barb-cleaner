@@ -93,7 +93,7 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
                   className="text-xl md:text-2xl font-bold"
                   style={{ color: mainColor ?? "#3B82F6" }}
                 >
-                  {logoText}
+                  {logoText}&nbsp;Services
                 </span>
                 <span
                   className="text-[10px] md:text-xs opacity-70"

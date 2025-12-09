@@ -351,7 +351,7 @@ export const testimonials3Data: Testimonials3Props = {
 
 export const contactCloserData: ContactCloserProps = {
   title: "Ready for a Spotless Home?",
-  description: "Contact us today to schedule your Halifax house cleaning services. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. We look forward to serving you!",
+  description: "Contact me today to schedule your Halifax house cleaning services. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
   buttonText: "Get in Touch",
   email: "btqcleaningservices@gmail.com",
   phone: "902-220-1089",
