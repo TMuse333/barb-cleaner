@@ -81,9 +81,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
             <h1
               className="text-3xl md:text-4xl font-bold pb-4"
               style={{
-                backgroundImage: `linear-gradient(to right, ${safeMainColor}, ${safeTextColor})`,
-                WebkitBackgroundClip: "text",
-                color: "transparent",
+                color: safeMainColor,
               }}
             >
               {title}

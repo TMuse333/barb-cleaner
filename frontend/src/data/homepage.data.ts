@@ -13,14 +13,12 @@ export const carouselHeroData: CarouselHeroProps = {
   subTitle: "",
   title: "Attention to Detail is the Key! No other Cleaning will do.",
   description: `Are you tired of:
-  
 
- the bigger Cleaning Companies that promise top quality Cleaning?
- not knowing who the cleaners are?
+•	the bigger Cleaning Companies that promise   top quality cleaning?
+•	not knowing who the cleaners are?
+•	not receiving the quality cleaning you expect for your hard earned money?
 
- not receiving the quality cleaning you expect for your hard earned money?
- 
-Well! Look no further! I have the solution for you!
+Well! Look no further! I have the solution for you! 
 I specialize in customized cleaning solutions with a personal touch and comparable prices.`,
   buttonText: "Get Started",
   items: [
@@ -72,9 +70,9 @@ I specialize in customized cleaning solutions with a personal touch and comparab
 
 export const experienceCardData: ExperienceCardProps = {
   title: "Why Choose BTQ Cleaning Services?",
-  description: `With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my cleaning service has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
+  description: `With over 20+ years of cleaning experience, I've built lasting relationships with clients who have become friends and family. I started cleaning in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
 
-  subTitle: "Trusted Halifax House Cleaning Services",
+  subTitle: "No other Cleaning will do!",
   buttonText: "Learn More",
   images: {
     main: {
@@ -218,7 +216,7 @@ We'll work together to find a schedule that is convenient for both of us.`
     }
   ],
   title: "Frequently Asked Questions",
-  description: "Here are some common questions I receive from our clients.",
+  description: "Here are some common questions I receive from my clients.",
   buttonText: "Contact Us",
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -339,7 +337,7 @@ export const testimonials3Data: Testimonials3Props = {
     }
   ],
   title: "Client Testimonials",
-  description: "Hear what our satisfied clients have to say about our Halifax house cleaning services.",
+  description: "Hear what our satisfied clients have to say about BTQ Cleaning Services.",
   array: [],
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -351,7 +349,7 @@ export const testimonials3Data: Testimonials3Props = {
 
 export const contactCloserData: ContactCloserProps = {
   title: "Ready for a Spotless Home?",
-  description: "Contact me today to schedule your Halifax house cleaning services. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
+  description: "Contact me today to schedule for your free consultation. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
   buttonText: "Get in Touch",
   email: "btqcleaningservices@gmail.com",
   phone: "902-220-1089",

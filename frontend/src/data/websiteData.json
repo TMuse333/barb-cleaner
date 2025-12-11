@@ -38,7 +38,7 @@
           "props": {
             "subTitle": "",
             "title": "Attention to Detail is the Key! No other Cleaning will do.",
-            "description": "Are you tired of:\n\n\nthe bigger Cleaning Companies that promise top quality Cleaning?\nnot knowing who the cleaners are?\n\nnot receiving the quality cleaning you expect for your hard earned money?\n\nWell! Look no further! I have the solution for you!\nI specialize in customized cleaning solutions with a personal touch and comparable prices.",
+            "description": "Are you tired of:\n\n•\tthe bigger Cleaning Companies that promise top quality cleaning?\n•\tnot knowing who the cleaners are?\n•\tnot receiving the quality cleaning you expect for your hard earned money?\n\nWell! Look no further! I have the solution for you! \nI specialize in customized cleaning solutions with a personal touch and comparable prices. \n",
             "buttonText": "Get Started",
             "items": [
               {
@@ -94,8 +94,8 @@
           "componentCategory": "contentPiece",
           "props": {
             "title": "Why Choose BTQ Cleaning Services?",
-            "description": "With over 20 years of cleaning experience, I've built lasting relationships with clients who have become friends and family. Starting in 2012, my cleaning service has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.",
-            "subTitle": "Trusted Halifax House Cleaning Services",
+            "description": "With over 20+ years of cleaning experience, I've built lasting relationships with clients who have become friends and family. I started cleaning in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.",
+            "subTitle": "No other Cleaning will do!",
             "buttonText": "Learn More",
             "images": {
               "main": {
@@ -142,7 +142,7 @@
           "props": {
             "subTitle": "",
             "title": "Discover the BTQ Cleaning Services Difference",
-            "description": "I clean your home the way you want—every home and owner is different. I bring all the products and gear needed to do\nthe job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures\ndust doesn't enter your home. I clean your home and take away your dirt!",
+            "description": "I clean your home the way you want—every home and owner is different. I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn’t enter your home. I clean your home and take away your dirt!",
             "images": {
               "main": {
                 "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-E95WQzSZzrr5SFukh9W43XO6q6HZG6.jpg",
@@ -250,7 +250,7 @@
               }
             ],
             "title": "Frequently Asked Questions",
-            "description": "Here are some common questions I receive from our clients.",
+            "description": "Here are some common questions I receive from my clients.",
             "buttonText": "Contact Us",
             "mainColor": "#3B82F6",
             "textColor": "#000000",
@@ -365,7 +365,7 @@
               }
             ],
             "title": "Client Testimonials",
-            "description": "Hear what our satisfied clients have to say about our Halifax house cleaning services.",
+            "description": "Hear what our satisfied clients have to say about BTQ Cleaning Services.",
             "array": [],
             "mainColor": "#3B82F6",
             "textColor": "#000000",
@@ -383,7 +383,7 @@
           "componentCategory": "misc",
           "props": {
             "title": "Ready for a Spotless Home?",
-            "description": "Contact me today to schedule your Halifax house cleaning services. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
+            "description": "Contact me today to schedule for your free consultation. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
             "buttonText": "Get in Touch",
             "email": "btqcleaningservices@gmail.com",
             "phone": "902-220-1089",
