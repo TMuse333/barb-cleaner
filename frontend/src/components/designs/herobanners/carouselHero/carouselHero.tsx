@@ -117,7 +117,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
         </section>
 
         {/* Right Carousel Section */}
-        <section className="relative w-full md:w-[55vw] lg:w-[60vw] bg-black rounded-2xl mx-auto h-[50vh] md:h-[60vh] lg:h-[80vh] border-4 border-white overflow-hidden">
+        <section className="relative w-full md:w-[55vw] lg:w-[60vw] bg-black rounded-2xl mx-auto min-h-[450px] h-[50vh] md:h-[60vh] lg:h-[80vh] border-4 border-white overflow-hidden">
           <AnimatePresence mode="wait">
             {safeItems.length > 0 && (
               <motion.div

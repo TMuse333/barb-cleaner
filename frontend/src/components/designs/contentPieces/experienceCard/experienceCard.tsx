@@ -130,7 +130,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
               alt={mainImg!.alt}
               width={600}
               height={1300}
-              className="w-full h-[50vh] object-cover rounded-xl"
+              className="w-full min-h-[450px] h-[50vh] object-cover rounded-xl"
               sizes="(max-width: 768px) 90vw, (max-width: 1024px) 60vw, 600px"
               priority
             />
