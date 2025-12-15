@@ -135,7 +135,7 @@ const Accordion: React.FC<AccordionProps> = (props) => {
       )}
 
       <section
-        className="rounded-xl shadow-lg"
+        className="rounded-xl shadow-lg max-w-[1500px] mx-auto w-full"
         ref={componentRef}
       >
         <div className="flex flex-col" style={{ backgroundColor: `${colors.baseBgColor}80` }}>
@@ -178,7 +178,7 @@ const Accordion: React.FC<AccordionProps> = (props) => {
               </motion.button>
             </motion.div>
           )}
-          <div className="space-y-4 p-4">
+          <div className="space-y-4 p-4 flex flex-col items-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentPage}
@@ -186,7 +186,7 @@ const Accordion: React.FC<AccordionProps> = (props) => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="space-y-4"
+                className="space-y-4 w-full flex flex-col items-center"
               >
                 {currentElements.map((item: { title: string; description: string }, index: number) => (
                   <motion.div
@@ -195,14 +195,14 @@ const Accordion: React.FC<AccordionProps> = (props) => {
                     initial="initial"
                     animate={inView ? "animate" : "initial"}
                     onClick={() => handleSectionClick(startIndex + index)}
-                    className="border-b p-4 rounded-lg hover:opacity-80 transition-colors cursor-pointer relative max-w-4xl mx-auto"
+                    className="border-b p-4 rounded-lg hover:opacity-80 transition-colors cursor-pointer relative max-w-[1500px] w-full mx-auto text-center"
                     style={{
                       boxShadow: boxShadow.get(),
                       borderColor: `${colors.mainColor}30`,
                       backgroundColor: expandedIndex === startIndex + index ? `${colors.mainColor}10` : `${colors.baseBgColor}40`,
                     }}
                   >
-                    <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 pr-12" style={{ color: colors.textColor ?? safeTextColor }}>
+                    <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3" style={{ color: colors.textColor ?? safeTextColor }}>
                       {item.title}
                     </h2>
                     <motion.div
@@ -214,7 +214,7 @@ const Accordion: React.FC<AccordionProps> = (props) => {
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       className="overflow-hidden"
                     >
-                      <p className="text-base leading-relaxed pt-2" style={{ color: colors.textColor ?? safeTextColor }}>
+                      <p className="text-base leading-relaxed pt-2 text-center" style={{ color: colors.textColor ?? safeTextColor }}>
                         {item.description}
                       </p>
                     </motion.div>

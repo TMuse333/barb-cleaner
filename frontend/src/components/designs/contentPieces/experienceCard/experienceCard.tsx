@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { motion, useScroll, useTransform, useMotionValueEvent, animate, useInView } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useIsMobile } from "@/lib";
 import { ExperienceCardProps, defaultExperienceCardProps } from ".";
@@ -101,7 +100,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
       style={{ scale,
         background: useAnimatedGradient(safeBgLayout, colors),
          }}
-      className="relative mx-auto w-[98vw] max-w-[1200px] rounded-3xl my-2 overflow-hidden shadow-2xl"
+      className="relative mx-auto w-[98vw] max-w-[1500px] rounded-3xl my-2 overflow-hidden shadow-2xl"
     >
       <motion.h2
         animate={{
@@ -151,22 +150,33 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
           </p>
 
           {buttonText && (
-            <Link href="#">
-              <button
-                className="font-semibold px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2 group"
-                style={{
-                  backgroundColor: safeMainColor,
-                  color: colors.baseBgColor,
-                }}
-              >
-                {buttonText}
-                <ArrowRight
-                style={{
-                  color: colors.baseBgColor,
-                }}
-                size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-            </Link>
+            <button
+              onClick={() => {
+                const element = document.getElementById("contact");
+                if (element) {
+                  const navbarHeight = 80; // Approximate navbar height in pixels
+                  const elementPosition = element.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+                  
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                  });
+                }
+              }}
+              className="font-semibold px-6 py-3 rounded-full transition-all duration-300 flex items-center gap-2 group"
+              style={{
+                backgroundColor: safeMainColor,
+                color: colors.baseBgColor,
+              }}
+            >
+              {buttonText}
+              <ArrowRight
+              style={{
+                color: colors.baseBgColor,
+              }}
+              size={20} className="group-hover:translate-x-1 transition-transform" />
+            </button>
           )}
         </motion.div>
       </section>

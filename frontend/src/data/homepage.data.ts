@@ -50,14 +50,16 @@ I specialize in customized cleaning solutions with a personal touch and comparab
         src: "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-xvW80LnskvtXcrpv5qcD0DEvadFCoL.jpg",
         alt: "Sparkling clean kitchen"
       },
-      description: "I clean your house and take away your dirt"
+      description: "I clean your house and take away your dirt",
+      objectContain: true
     },
     {
       image: {
         src:'https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230428_111518_resized%281%29-DZIejTOayAlmTIKbRLiKf4mcwvOXJL.jpg',
-        alt:'Dog at the top of the stairs'
+        alt:'Dog at the top of the stairs',
       },
-      description: "Pet friendly cleaning services"
+      description: "Pet friendly cleaning services",
+      objectContain: true
     },
   ],
   mainColor: "#3B82F6",
@@ -163,7 +165,7 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Deep Cleaning",
-      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, change bedding, dishes and put away, kitchen cupboards & drawers.`
+      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, changed bedding, dishes and put away, kitchen cupboards & drawers.`
     },
     {
       type: "StandardText",
@@ -191,7 +193,7 @@ export const accordionData: AccordionProps = {
     {
       type: "StandardText",
       title: "What areas do you serve?",
-      description: "BTQ Cleaning Services cover various neighborhoods throughout Halifax and surrounding areas. Please contact us at 902-220-1089 or btqcleaningservices@gmail.com for specific locations."
+      description: "BTQ Cleaning Services cover various neighborhoods throughout Halifax and surrounding areas. Please contact me at 902-220-1089 or btqcleaningservices@gmail.com for specific locations."
     },
     {
       type: "StandardText",

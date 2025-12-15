@@ -224,7 +224,7 @@ const FeatureBoxes: React.FC<FeatureBoxesProps> = (props) => {
         </div>
       )}
 
-      <section className="flex flex-col mx-auto justify-center items-center mt-6 sm:grid grid-cols-2 max-w-[1200px]">
+      <section className="flex flex-col mx-auto justify-center items-center mt-6 sm:grid grid-cols-2 max-w-[1500px]">
         {items.map((item, index) => {
           const image = getImageForIndex(index);
           const Icon = getIconForFeature(item.title, index);

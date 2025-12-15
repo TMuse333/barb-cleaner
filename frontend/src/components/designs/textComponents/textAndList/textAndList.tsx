@@ -48,7 +48,7 @@ const TextAndList: React.FC<TextAndListProps> = (props) => {
       style={{ background, color: colors.textColor ?? "#000000" }}
       className="w-full py-20 px-6"
     >
-      <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto gap-12">
+      <div className="flex flex-col md:flex-row items-center max-w-[1500px] mx-auto gap-12">
         {/* Left side image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="h-72 w-72 md:h-96 md:w-96 rounded-2xl overflow-hidden border-4 shadow-xl" style={{ borderColor: colors.accentColor ?? "#3B82F6" }}>

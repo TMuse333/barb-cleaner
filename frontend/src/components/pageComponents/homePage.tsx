@@ -28,8 +28,8 @@ export default function IndexPage() {
   return (
     <>
       <LandingNavbar {...navbarData} />
-      <main className="pt-16 md:pt-20">
-        <section id="hero">
+      <main className="mt-5 sm:mt-10 md:mt-16">
+        <section id="hero" className="">
           <CarouselHero {...carouselHeroData} />
         </section>
         <section id="about">

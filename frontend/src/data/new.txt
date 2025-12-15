@@ -1,0 +1,408 @@
+{
+  "_id": "692bc4d1633c31b17027540a",
+  "owner": "btqcleaningservices@gmail.com",
+  "templateName": "Professional Services",
+  "websiteName": "Unnamed Website",
+  "formData": {
+    "fastTrackDescription": {
+      "answer": "*My experiences: I worked as an office manager for a cleaning office company during 2006 to 2007. I found it interesting to see how the business worked. I needed extra income so I obtained and office building to clean in the evenings. Then I became a payroll clerk during 2007-2011. I need to increase my income so I obtained a second job cleaning the provincial courthouse on Spring Garden Rd. I learned about the duties of a sheriff so I took the course to become one. I have security experience and worked there for a few weeks for my training. Unfortunately the job was only a part-time job. I started cleaning houses in 2012. My first client was so amazing, I obtained her friend as a client from her referral. Most of my clients are from referrals and word of mouth. I currently have over 20 years of experiences cleaning. I absolutely love my job and my clients. My clients have become my friends and family. They often tell me I have a gift with cleaning and I help removing stress when they come home to a clean house. They can relax from a hard day's work and not worry about the cleaning. The kids are happy with their room nice and tidy and the pets gets some hugs and kisses while I clean. \n*My customers are from all ages, with kids and pets to elders with disabilities. \n*My unique: I take pride of my work to ensure the clients are happy with the results. I build a solid relationship with the clients, I am dependable, bonded, and reliable. My clients call me the pet whisper. I show the pets with respect and gentleness. \n*I want this website to connect with marketplace/facebook advertising. To bring in clients when I have a spot available. But I also want to put the website to sleep or to state I am fully booked. \n*My service: I clean houses the way the clients wants. Every house/owner is different. I bring all the products and gear to do the job, I clean with environmentally/pet friendly products. I have a vacuum backpack cleaner with 3 filters to ensure the dust does not enter the house. I clean your house and take away your dirt. \n*Contact info: btqcleaningservices@gmail.com  cell: 902-220-1089 facebook:      https://www.facebook.com/profile.php?id=61584047477031\n*********\n(HI THOMAS:  PLEASE FEEL FREE TO CLEAN UP ANY ERRORS OR TYPOS, MAKE IT SOUND PROFESSIONAL).\n\n"
+    },
+    "contactEmail": {
+      "answer": "btqcleaningservices@gmail.com"
+    },
+    "mainColor": {
+      "answer": "#3B82F6"
+    },
+    "baseBgColor": {
+      "answer": "#FFFFFF"
+    },
+    "textColor": {
+      "answer": "#000000"
+    },
+    "bgLayoutType": {
+      "answer": "solid"
+    },
+    "additionalInfo": {
+      "answer": "*My experiences: I worked as an office manager for a cleaning office company during 2006 to 2007. I found it interesting to see how the business worked. I needed extra income so I obtained and office building to clean in the evenings. Then I became a payroll clerk during 2007-2011. I need to increase my income so I obtained a second job cleaning the provincial courthouse on Spring Garden Rd. I learned about the duties of a sheriff so I took the course to become one. I have security experience and worked there for a few weeks for my training. Unfortunately the job was only a part-time job. I started cleaning houses in 2012. My first client was so amazing, I obtained her friend as a client from her referral. Most of my clients are from referrals and word of mouth. I currently have over 20 years of experiences cleaning. I absolutely love my job and my clients. My clients have become my friends and family. They often tell me I have a gift with cleaning and I help removing stress when they come home to a clean house. They can relax from a hard day's work and not worry about the cleaning. The kids are happy with their room nice and tidy and the pets gets some hugs and kisses while I clean. \n*My customers are from all ages, with kids and pets to elders with disabilities. \n*My unique: I take pride of my work to ensure the clients are happy with the results. I build a solid relationship with the clients, I am dependable, bonded, and reliable. My clients call me the pet whisper. I show the pets with respect and gentleness. \n*I want this website to connect with marketplace/facebook advertising. To bring in clients when I have a spot available. But I also want to put the website to sleep or to state I am fully booked. \n*My service: I clean houses the way the clients wants. Every house/owner is different. I bring all the products and gear to do the job, I clean with environmentally/pet friendly products. I have a vacuum backpack cleaner with 3 filters to ensure the dust does not enter the house. I clean your house and take away your dirt. \n*Contact info: btqcleaningservices@gmail.com  cell: 902-220-1089 facebook:      https://www.facebook.com/profile.php?id=61584047477031\n*********\n(HI THOMAS:  PLEASE FEEL FREE TO CLEAN UP ANY ERRORS OR TYPOS, MAKE IT SOUND PROFESSIONAL).\n\n"
+    }
+  },
+  "pages": [
+    {
+      "components": [
+        {
+          "id": "carouselHero-0",
+          "type": "carouselHero",
+          "order": 0,
+          "context": "A herobanner that uses a slide show of images",
+          "componentCategory": "hero",
+          "props": {
+            "subTitle": "",
+            "title": "Attention to Detail is the Key! No other Cleaning will do.",
+            "description": "Are you tired of:\n\n•\tthe bigger Cleaning Companies that promise top quality cleaning?\n•\tnot knowing who the cleaners are?\n•\tnot receiving the quality cleaning you expect for your hard earned money?\n\nWell! Look no further! I have the solution for you! \nI specialize in customized cleaning solutions with a personal touch and comparable prices. \n",
+            "buttonText": "Get Started",
+            "items": [
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230225_154832_resized-bmZv5sMrMjfwPHyNHU7gLqH1dyMiN5.jpg",
+                  "alt": "Barb holding a bird"
+                },
+                "description": "Pet friendly cleaning services",
+                "objectContain": true
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084631_resized-5sBNryIVUI6tFavIaKjfwaZx2JJcxx.jpg",
+                  "alt": "Clean and organized home space"
+                },
+                "description": "Come home to a spotless sanctuary—your stress melts away"
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-5U3djxW6WBu2pk4VaBMf0DNJ7Gp6QN.jpg",
+                  "alt": "Professional cleaning service in action"
+                },
+                "description": "Over 20+ years of house cleaning experience, building lasting client relationships."
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-xvW80LnskvtXcrpv5qcD0DEvadFCoL.jpg",
+                  "alt": "Sparkling clean kitchen"
+                },
+                "description": "I clean your house and take away your dirt"
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230428_111518_resized%281%29-DZIejTOayAlmTIKbRLiKf4mcwvOXJL.jpg",
+                  "alt": "Dog at the top of the stairs"
+                },
+                "description": "Pet friendly cleaning services"
+              }
+            ],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "experienceCard-1",
+          "type": "experienceCard",
+          "order": 1,
+          "context": "A card to display key experiences, features, or highlights with image, text, and list items.",
+          "componentCategory": "contentPiece",
+          "props": {
+            "title": "Why Choose BTQ Cleaning Services?",
+            "description": "With over 20+ years of cleaning experience, I've built lasting relationships with clients who have become friends and family. I started cleaning in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.",
+            "subTitle": "No other Cleaning will do!",
+            "buttonText": "Learn More",
+            "images": {
+              "main": {
+                "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-BpRo4DkkTJhKHWFH7E6Oei3txNTNe3.jpg",
+                "alt": "Professional Halifax house cleaning services with over 20 years of experience"
+              }
+            },
+            "array": [
+              {
+                "type": "StandardText",
+                "title": "Personalized Cleaning Plans"
+              },
+              {
+                "type": "StandardText",
+                "title": "Eco-Friendly & Pet-Safe Products"
+              },
+              {
+                "type": "StandardText",
+                "title": "Bonded, Insured & Reliable"
+              },
+              {
+                "type": "StandardText",
+                "title": "The Pet Whisper"
+              },
+              {
+                "type": "StandardText",
+                "title": "All Ages Welcome"
+              }
+            ],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "textAndList-2",
+          "type": "textAndList",
+          "order": 2,
+          "context": "Provides a bulleted list of features/benefits",
+          "componentCategory": "textComponent",
+          "props": {
+            "subTitle": "",
+            "title": "Discover the BTQ Cleaning Services Difference",
+            "description": "I clean your home the way you want—every home and owner is different. I bring all the products and gear needed to do the job right, including environmentally and pet-friendly products. My vacuum backpack cleaner with 3 filters ensures dust doesn’t enter your home. I clean your home and take away your dirt!",
+            "images": {
+              "main": {
+                "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084620_resized_1-E95WQzSZzrr5SFukh9W43XO6q6HZG6.jpg",
+                "alt": "Quality Halifax house cleaning services commitment"
+              }
+            },
+            "textArray": [
+              {
+                "title": "Customized for Every Home",
+                "description": "\n      Every home is unique, every client/family is different, so is my cleaning solution. I tailor my approach to match your specific preferences and needs.\n      "
+              },
+              {
+                "title": "20+ Years of Experience",
+                "description": "\n      Started cleaning houses in 2012, with over 20 years of house cleaning services experience total. Most clients come from referrals and word of mouth.\n      "
+              },
+              {
+                "title": "All Your Needs Covered",
+                "description": "Serving clients of all ages—from families with kids and pets to elders with disabilities. I show pets respect and gentleness, earning me the nickname 'Pet Whisper' from clients."
+              },
+              {
+                "title": "Advanced Equipment",
+                "description": "Using a professional vacuum backpack cleaner with 3 filters that ensures dust doesn't enter your home during cleaning."
+              }
+            ],
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "featureBoxes-3",
+          "type": "featureBoxes",
+          "order": 3,
+          "context": "A grid of feature boxes, each displaying an image, title, and description. Perfect for showcasing features, services, or benefits.",
+          "componentCategory": "textComponent",
+          "props": {
+            "array": [
+              {
+                "type": "StandardText",
+                "title": "Regular Home Cleaning",
+                "description": "Attention to detail for every room in your home, customized to your preferences. I bring all the products and gear, including eco-friendly and pet-friendly supplies."
+              },
+              {
+                "type": "StandardText",
+                "title": "Deep Cleaning",
+                "description": "During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, change bedding, dishes and put away, kitchen cupboards & drawers."
+              },
+              {
+                "type": "StandardText",
+                "title": "Specialized Cleaning",
+                "description": "Serving all clients—from families with kids and pets to elders with disabilities. Your pets get extra love while I work, and your home gets the attention it deserves."
+              },
+              {
+                "type": "StandardText",
+                "title": "Move-In/Move-Out Cleaning",
+                "description": "Comprehensive cleaning services for your transition. Whether you're moving in or moving out, I ensure your space is spotless and ready for your new beginning."
+              }
+            ],
+            "title": "My Services",
+            "description": "Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the products and gear needed to do the job right.",
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "accordion-4",
+          "type": "accordion",
+          "order": 4,
+          "context": "An interactive accordion component that displays a list of items with expandable descriptions. Supports pagination, intro text, and optional link button.",
+          "componentCategory": "textComponent",
+          "props": {
+            "array": [
+              {
+                "type": "StandardText",
+                "title": "What areas do you serve?",
+                "description": "BTQ Cleaning Services cover various neighborhoods throughout Halifax and surrounding areas. Please contact us at 902-220-1089 or btqcleaningservices@gmail.com for specific locations."
+              },
+              {
+                "type": "StandardText",
+                "title": "Do you bring your own supplies?",
+                "description": "Yes! I bring all necessary cleaning supplies and equipment, including eco-friendly and pet-friendly products. My professional vacuum backpack cleaner with 3 filters ensures thorough cleaning without dust entering your home."
+              },
+              {
+                "type": "StandardText",
+                "title": "How do I book a service?",
+                "description": "Booking is simple! Call 902-220-1089, email btqcleaningservices@gmail.com, or message me on Facebook.\nWe'll work together to find a schedule that is convenient for both of us."
+              },
+              {
+                "type": "StandardText",
+                "title": "Are you bonded and insured?",
+                "description": "Yes, I am bonded, dependable, and reliable. I take pride in my work and build solid relationships with clients based on trust and satisfaction. Upon request, I can provide a criminal background check record."
+              },
+              {
+                "type": "StandardText",
+                "title": "Do you clean for families with pets?",
+                "description": "Absolutely! I'm known as the 'Pet Whisper' by my clients. I show pets respect and gentleness while cleaning. Your pets get hugs and kisses, and I ensure all products used are pet-friendly and safe."
+              }
+            ],
+            "title": "Frequently Asked Questions",
+            "description": "Here are some common questions I receive from my clients.",
+            "buttonText": "Contact Us",
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "gridCarousel-5",
+          "type": "gridCarousel",
+          "order": 5,
+          "context": "A carousel used for displaying many images at once, with each one being expandable",
+          "componentCategory": "carousel",
+          "props": {
+            "subTitle": "BTQ Cleaning Services Gallery",
+            "title": "Transformations I Create",
+            "description": "Browse through my gallery to see the beautiful clean spaces my cleaning service have achieved for my clients.",
+            "items": [
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084631_resized-ManjhNN4PIatLWjgdCahwOLNhzNlgS.jpg",
+                  "alt": "Clean and organized living space"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084654_resized-1lBcw6JvrJFAct1aVahh77sTOTwCae.jpg",
+                  "alt": "Professional Halifax house cleaning services kitchen cleaning"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084848_resized-Lcvt64PSXzOKpzBLwWKg14Gn79ReqA.jpg",
+                  "alt": "Sparkling clean home interior"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_084605_resized-yt5zbS0MrJnxWrC7ibNlIm50JW3t6K.jpg",
+                  "alt": "Professional Halifax house cleaning services deep cleaning result"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20250603_092053-PREzMSBbfdQ1iRhjCKgvycGxelqg3C.jpg",
+                  "alt": "Halifax house cleaning services transformation result"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_085215_resized-pzfwJ2Z80eLTnKe1BTfkBCu8UUPMV9.jpg",
+                  "alt": "Professional Halifax house cleaning services bathroom cleaning"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20180815_085027_resized-2zEL1NiNrQg4NcuXakx14BnlFW5nJm.jpg",
+                  "alt": "Halifax house cleaning services immaculate home space"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230315_191800_resized-1oHBlFWjnb7dxevCJ80r3LO12NARrh.jpg",
+                  "alt": "Spotless Halifax house cleaning services result"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230225_154832_resized-bmZv5sMrMjfwPHyNHU7gLqH1dyMiN5.jpg",
+                  "alt": "Barb holding a bird - pet-friendly cleaning services"
+                }
+              },
+              {
+                "image": {
+                  "src": "https://maf7vdyjaxjtyxfd.public.blob.vercel-storage.com/users/692bbf5c91423b9780010fe4/20230428_111518_resized%281%29-DZIejTOayAlmTIKbRLiKf4mcwvOXJL.jpg",
+                  "alt": "Dog at the top of the stairs - pet-friendly cleaning services"
+                }
+              }
+            ],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "testimonials3-6",
+          "type": "testimonials3",
+          "order": 6,
+          "context": "Showcases previous testimonials",
+          "componentCategory": "testimonial",
+          "props": {
+            "testimonials": [
+              {
+                "name": "Sarah L.",
+                "role": "Homeowner",
+                "quote": "BTQ's Halifax house cleaning services transformed my home! I couldn't be happier with the results."
+              },
+              {
+                "name": "Mark T.",
+                "role": "Business Owner",
+                "quote": "Dependable and thorough! They always exceed my expectations."
+              },
+              {
+                "name": "Emily R.",
+                "role": "Client",
+                "quote": "I love coming home to a clean house. Thank you for your amazing service!"
+              }
+            ],
+            "title": "Client Testimonials",
+            "description": "Hear what our satisfied clients have to say about BTQ Cleaning Services.",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        },
+        {
+          "id": "contactCloser-7",
+          "type": "contactCloser",
+          "order": 7,
+          "context": "Last section with a closing pitch and call-to-action form",
+          "componentCategory": "misc",
+          "props": {
+            "title": "Ready for a Spotless Home?",
+            "description": "Contact me today to schedule for your free consultation. Experience the joy of a clean space tailored to your needs. I clean your house and take away your dirt—so you can relax after a hard day's work. I look forward to serving you!",
+            "buttonText": "Get in Touch",
+            "email": "btqcleaningservices@gmail.com",
+            "phone": "902-220-1089",
+            "facebookUrl": "https://www.facebook.com/profile.php?id=61584047477031",
+            "array": [],
+            "mainColor": "#3B82F6",
+            "textColor": "#000000",
+            "baseBgColor": "#FFFFFF",
+            "bgLayout": {
+              "type": "solid"
+            }
+          }
+        }
+      ],
+      "text": []
+    }
+  ],
+  "status": "draft",
+  "createdAt": "2025-11-30T04:15:13.159Z",
+  "updatedAt": "2025-11-30T04:15:13.159Z",
+  "__v": 0
+}

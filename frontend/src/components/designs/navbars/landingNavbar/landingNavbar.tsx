@@ -73,9 +73,9 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
         backdropFilter: isScrolled ? "blur(10px)" : "none",
       }}
     >
-      <div className="max-w-[2200px] mx-auto px-4 md:px-8">
+      <div className="max-w-[1500px] mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo - Left */}
           <div
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -90,10 +90,10 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
             {logoText && (
               <div className="flex flex-col">
                 <span
-                  className="text-xl md:text-2xl font-bold"
+                  className="text-l md:text-md font-bold"
                   style={{ color: mainColor ?? "#3B82F6" }}
                 >
-                  {logoText}&nbsp;Services
+                  {logoText}&nbsp;<br/>Services
                 </span>
                 <span
                   className="text-[10px] md:text-xs opacity-70"
@@ -105,25 +105,28 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
             )}
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation - Middle (natural flow) */}
+          <div className="hidden md:flex items-center gap-6 lg:gap-8 flex-1 justify-center">
             {tabs.map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleNavClick(item)}
-                className="font-medium transition-colors hover:opacity-70"
+                className="font-medium transition-colors hover:opacity-70 whitespace-nowrap"
                 style={{ color: textColor ?? "#000000" }}
               >
                 {item.label}
               </button>
             ))}
+          </div>
 
+          {/* CTA Button & Mobile Menu - Right */}
+          <div className="flex items-center gap-4">
             {buttonText && (
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleScrollTo(ctaDestination)}
-                className="px-6 py-2 rounded-full font-semibold transition-all"
+                className="hidden md:block px-6 py-2 rounded-full font-semibold transition-all"
                 style={{
                   backgroundColor: mainColor ?? "#3B82F6",
                   color: baseBgColor ?? "#FFFFFF",
@@ -132,16 +135,14 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
                 {buttonText}
               </motion.button>
             )}
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              style={{ color: textColor ?? "#000000" }}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            style={{ color: textColor ?? "#000000" }}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </div>
 

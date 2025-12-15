@@ -212,7 +212,7 @@ const GridCarousel:React.FC<GridCarouselProps> = (props) => {
         className={`w-screen  
           flex flex-col   ml-auto mr-auto
           justify-center items-center md:flex-row 
-          mb-5 ${!carouselClicked ? 'max-w-[1200px]  relative' : 'bg-black h-[100vh] fixed top-0 left-0 z-[95]'}`}
+          mb-5 ${!carouselClicked ? 'max-w-[1500px]  relative' : 'bg-black h-[100vh] fixed top-0 left-0 z-[95]'}`}
       >
         <div
           className={`mt-10 ml-auto mr-auto flex relative ${ !carouselClicked ? '' : 'w-[100%]'} `}
@@ -228,7 +228,7 @@ const GridCarousel:React.FC<GridCarouselProps> = (props) => {
               max-w-[900px] 
               max-h-[480px]
               
-              md:max-w-[1400px]
+              md:max-w-[1500px]
             ` : 'w-screen  h-[100vh]'}
             overflow-hidden `}
           >
@@ -320,7 +320,7 @@ const GridCarousel:React.FC<GridCarouselProps> = (props) => {
       </section>
       ) : (
         <>
-        <section className='w-screen max-w-[1800px] mx-auto
+        <section className='w-screen max-w-[1500px] mx-auto
         grid grid-cols-2 md:grid-cols-3 justify-center'>
             {items.map((item, index) => (
                 <Image src={item.image.src}

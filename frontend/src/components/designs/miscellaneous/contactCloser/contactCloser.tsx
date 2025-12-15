@@ -77,7 +77,7 @@ const ContactCloser: React.FC<ContactCloserProps> = (props) => {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-[1500px] mx-auto relative z-10">
         {title && (
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

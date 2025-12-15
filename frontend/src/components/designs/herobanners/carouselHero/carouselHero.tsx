@@ -70,16 +70,16 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
 
   return (
     <motion.section
-      className="w-full"
+      className="w-full pt-20 md:pt-24"
       style={{ background: backgroundImage }}
     >
-      <section className="flex flex-col md:flex-row md:h-screen relative items-center mx-auto max-w-[2200px] md:mt-[-4rem] gap-4 px-4">
+      <section className="flex flex-col md:flex-row md:min-h-[600px] lg:h-screen relative items-center mx-auto max-w-[1500px] gap-3 md:gap-4 px-4 py-4 md:py-6">
         {/* Left Text Section */}
-        <section className="flex flex-col md:w-[40vw] justify-center items-start py-8 px-6 space-y-3">
-          {subTitle && <span className="text-xl font-medium" style={{ color: safeMainColor }}>{subTitle}</span>}
+        <section className="flex flex-col md:w-[45vw] lg:w-[40vw] justify-center items-start py-4 md:py-6 lg:py-8 px-4 md:px-5 lg:px-6 space-y-2 md:space-y-3">
+          {subTitle && <span className="text-lg md:text-xl font-medium" style={{ color: safeMainColor }}>{subTitle}</span>}
           {title && (
             <h1
-              className="text-3xl md:text-4xl font-bold pb-4"
+              className="text-3xl md:text-3xl lg:text-4xl font-bold pb-2 md:pb-4"
               style={{
                 color: safeMainColor,
               }}
@@ -91,24 +91,24 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex justify-start my-2"
+            className="flex justify-start my-1 md:my-2"
           >
             <Image
               src="/logo.png"
               alt="BTQ Cleaning Services Logo"
               width={200}
               height={200}
-              className="object-contain max-w-[200px] max-h-[200px]"
+              className="object-contain max-w-[150px] md:max-w-[160px] lg:max-w-[200px] max-h-[150px] md:max-h-[160px] lg:max-h-[200px]"
               priority
             />
           </motion.div>
-          {description && <p className="text-base md:text-lg whitespace-pre-line leading-tight" style={{ color: safeTextColor }}>{description}</p>}
+          {description && <p className="text-base md:text-base lg:text-lg whitespace-pre-line leading-tight" style={{ color: safeTextColor }}>{description}</p>}
           {buttonText && (
             <motion.button
               onClick={handleScrollToContact}
               whileHover={{ scale: 1.05, boxShadow: `0 10px 30px ${safeMainColor}40` }}
               whileTap={{ scale: 0.95 }}
-              className="mt-6 px-8 py-3 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-lg"
+              className="mt-4 md:mt-5 lg:mt-6 px-6 md:px-7 lg:px-8 py-2.5 md:py-2.5 lg:py-3 rounded-xl font-bold text-base md:text-base lg:text-lg transition-all duration-300 hover:shadow-lg"
               style={{ backgroundColor: safeMainColor, color: safeBaseBgColor }}
             >
               {buttonText}
@@ -117,7 +117,7 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
         </section>
 
         {/* Right Carousel Section */}
-        <section className="relative w-full md:w-[60vw] bg-black rounded-2xl mx-auto h-[70vh] md:h-[80vh] border-4 border-white overflow-hidden">
+        <section className="relative w-full md:w-[55vw] lg:w-[60vw] bg-black rounded-2xl mx-auto h-[50vh] md:h-[60vh] lg:h-[80vh] border-4 border-white overflow-hidden">
           <AnimatePresence mode="wait">
             {safeItems.length > 0 && (
               <motion.div
