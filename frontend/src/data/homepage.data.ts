@@ -102,6 +102,10 @@ export const experienceCardData: ExperienceCardProps = {
     {
       type: "StandardText",
       title: "All Ages Welcome"
+    },
+    {
+      type: "StandardText",
+      title:'Houses only with parking close to the door'
     }
   ],
   mainColor: "#3B82F6",
@@ -179,7 +183,9 @@ export const featureBoxesData: FeatureBoxesProps = {
     }
   ],
   title: "My Services",
-  description: `Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the products and gear needed to do the job right.`,
+  description: `Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the products and gear needed to do the job right.
+  I provide house cleaning with parking only. I do not clean apartments or condos. My hear is heavy
+  & must be carried into the house.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
   baseBgColor: "#FFFFFF",
@@ -215,11 +221,16 @@ We'll work together to find a schedule that is convenient for both of us.`
       type: "StandardText",
       title: "Do you clean for families with pets?",
       description: "Absolutely! I'm known as the 'Pet Whisper' by my clients. I show pets respect and gentleness while cleaning. Your pets get hugs and kisses, and I ensure all products used are pet-friendly and safe."
+    },
+    {
+      type: "StandardText",
+      title:'Do you clean condos or apartments?',
+      description:'No, I only clean houses with parking. I have heavy gear that needs to be carried so parking must be close to the door.'
     }
   ],
   title: "Frequently Asked Questions",
   description: "Here are some common questions I receive from my clients.",
-  buttonText: "Contact Us",
+  buttonText: "Contact Now",
   mainColor: "#3B82F6",
   textColor: "#000000",
   baseBgColor: "#FFFFFF",
