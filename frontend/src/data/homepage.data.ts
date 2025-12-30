@@ -72,7 +72,7 @@ I specialize in customized cleaning solutions with a personal touch and comparab
 
 export const experienceCardData: ExperienceCardProps = {
   title: "Why Choose BTQ Cleaning Services?",
-  description: `With over 20+ years of cleaning experience, I've built lasting relationships with clients who have become friends and family. I started cleaning in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
+  description: `With over 20+ years of cleaning experience, I've built lasting relationships with clients who have become friends and family. I started my cleaning business in 2012, my cleaning services has grown through referrals and word of mouth. Clients often tell me I have a gift with cleaning and that I help remove stress—when you come home to a clean house, you can relax after a hard day's work without worrying about cleaning. Your kids are happy with tidy rooms, and your pets get hugs and kisses while I work.`,
 
   subTitle: "No other Cleaning will do!",
   buttonText: "Learn More",
@@ -93,7 +93,7 @@ export const experienceCardData: ExperienceCardProps = {
     },
     {
       type: "StandardText",
-      title: "Bonded, Insured & Reliable"
+      title: "Bonded, Dependable & Reliable"
     },
     {
       type: "StandardText",
@@ -138,16 +138,16 @@ dust doesn’t enter your home. I clean your home and take away your dirt!`,
     {
       title: "20+ Years of Experience",
       description: `
-      Started cleaning houses in 2012, with over 20 years of house cleaning services experience total. Most clients come from referrals and word of mouth.
+      Started cleaning houses in 2012, with over 20 years of cleaning services experience total. Most clients come from referrals and word of mouth.
       `
     },
     {
       title: "All Your Needs Covered",
-      description: "Serving clients of all ages—from families with kids and pets to elders with disabilities. I show pets respect and gentleness, earning me the nickname 'Pet Whisper' from clients."
+      description: "Serving clients of all ages—from families with kids and pets to elders with disabilities. I show pets respect and gentleness, earning me the nickname 'Pet Whisperer' from clients."
     },
     {
       title: "Advanced Equipment",
-      description: "Using a professional vacuum backpack cleaner with 3 filters that ensures dust doesn't enter your home during cleaning."
+      description: "I use a professional vacuum backpack cleaner with 3 filters that ensures dust doesn't enter your home during cleaning."
     }
   ],
   array: [],
@@ -164,12 +164,12 @@ export const featureBoxesData: FeatureBoxesProps = {
     {
       type: "StandardText",
       title: "Regular Home Cleaning",
-      description: `Attention to detail for every room in your home, customized to your preferences. I bring all the products and gear, including eco-friendly and pet-friendly supplies.`
+      description: `Attention to detail for every room in your home, customized to your preferences. I bring all the cleaning products and gear, including eco-friendly and pet-friendly supplies.`
     },
     {
       type: "StandardText",
       title: "Deep Cleaning",
-      description: `During the seasons changing or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, changed bedding, dishes and put away, kitchen cupboards & drawers.`
+      description: `During the changing of seasons or special events, I provide detail cleaning for: interior windows/frames, doors & frames, baseboards, entry closets floors, oven interior & exterior, fridge interior & exterior, microwave interior & exterior, Laundry done but not put away, changed bedding, dishes and put away, kitchen cupboards & drawers.`
     },
     {
       type: "StandardText",
@@ -183,8 +183,8 @@ export const featureBoxesData: FeatureBoxesProps = {
     }
   ],
   title: "My Services",
-  description: `Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the products and gear needed to do the job right.
-  I provide house cleaning with parking only. I do not clean apartments or condos. My hear is heavy
+  description: `Every home is unique, and so is my cleaning service. I clean houses the way you want, I also bring all the cleaning products and gear needed to do the job right.
+  I provide house cleaning with parking only. I do not clean apartments or condos. My gear is heavy
   & must be carried into the house.`,
   mainColor: "#3B82F6",
   textColor: "#000000",
@@ -196,6 +196,11 @@ export const featureBoxesData: FeatureBoxesProps = {
 
 export const accordionData: AccordionProps = {
   array: [
+    {
+      type: "StandardText",
+      title:'Do you clean condos or apartments?',
+      description:'No, I only clean houses with parking. I have heavy gear that needs to be carried so parking must be close to the door.'
+    },
     {
       type: "StandardText",
       title: "What areas do you serve?",
@@ -215,18 +220,14 @@ We'll work together to find a schedule that is convenient for both of us.`
     {
       type: "StandardText",
       title: "Are you bonded and insured?",
-      description: "Yes, I am bonded, dependable, and reliable. I take pride in my work and build solid relationships with clients based on trust and satisfaction. Upon request, I can provide a criminal background check record."
+      description: "Yes, I am bonded, dependable, and reliable. I take pride in my work and build solid relationships with clients based on trust and satisfaction. Upon request, I can provide a criminal background check."
     },
     {
       type: "StandardText",
       title: "Do you clean for families with pets?",
-      description: "Absolutely! I'm known as the 'Pet Whisper' by my clients. I show pets respect and gentleness while cleaning. Your pets get hugs and kisses, and I ensure all products used are pet-friendly and safe."
+      description: "Absolutely! I'm known as the 'Pet Whisperer' by my clients. I show pets respect and gentleness while cleaning. Your pets get hugs and kisses, and I ensure all products used are pet-friendly and safe."
     },
-    {
-      type: "StandardText",
-      title:'Do you clean condos or apartments?',
-      description:'No, I only clean houses with parking. I have heavy gear that needs to be carried so parking must be close to the door.'
-    }
+   
   ],
   title: "Frequently Asked Questions",
   description: "Here are some common questions I receive from my clients.",
