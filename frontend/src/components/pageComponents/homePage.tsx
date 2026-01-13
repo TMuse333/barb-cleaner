@@ -11,6 +11,9 @@ import Accordion from "@/components/designs/textComponents/accordion/accordion";
 import GridCarousel from "@/components/designs/carousels/gridCarousel/gridCarousel";
 import Testimonials3 from "@/components/designs/testimonials/testimonials3/testimonials3";
 import ContactCloser from "@/components/designs/miscellaneous/contactCloser/contactCloser";
+import SparkleHome from "@/components/svg/SparkleHome";
+import PetFriendlyBadge from "@/components/svg/PetFriendlyBadge";
+import CleaningTransform from "@/components/svg/CleaningTransform";
 import {
   navbarData,
   footerData,
@@ -32,6 +35,33 @@ export default function IndexPage() {
         <section id="hero" className="">
           <CarouselHero {...carouselHeroData} />
         </section>
+
+        {/* Trust Badges Section */}
+        <section className="py-8 md:py-12 bg-gradient-to-b from-white to-blue-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+              <div className="flex flex-col items-center">
+                <SparkleHome
+                  width={200}
+                  height={180}
+                  primaryColor="#3B82F6"
+                  secondaryColor="#60A5FA"
+                  accentColor="#FCD34D"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <PetFriendlyBadge
+                  width={180}
+                  height={200}
+                  primaryColor="#3B82F6"
+                  secondaryColor="#60A5FA"
+                  accentColor="#F472B6"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="about">
           <ExperienceCard {...experienceCardData} />
         </section>
@@ -44,6 +74,28 @@ export default function IndexPage() {
         <section id="faq">
           <Accordion {...accordionData} />
         </section>
+
+        {/* Before/After Transformation Section */}
+        <section className="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">
+              See the BTQ Difference
+            </h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+              Watch the transformation happen — from cluttered and dusty to sparkling clean.
+            </p>
+            <div className="flex justify-center">
+              <CleaningTransform
+                width={420}
+                height={240}
+                primaryColor="#3B82F6"
+                secondaryColor="#60A5FA"
+                accentColor="#FCD34D"
+              />
+            </div>
+          </div>
+        </section>
+
         <section id="gallery">
           <GridCarousel {...gridCarouselData} />
         </section>

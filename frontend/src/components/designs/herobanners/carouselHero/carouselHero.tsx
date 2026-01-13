@@ -7,7 +7,24 @@ import { CarouselHeroProps, defaultCarouselHeroProps } from ".";
 
 import { deriveColorPalette, useAnimatedGradient } from "@/lib";
 
+const FULLY_BOOKED_KEY = "btq_fully_booked";
+
 const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
+  const [isFullyBooked, setIsFullyBooked] = useState(false);
+
+  // Check localStorage for fully booked status
+  useEffect(() => {
+    const checkFullyBooked = () => {
+      const storedValue = localStorage.getItem(FULLY_BOOKED_KEY);
+      setIsFullyBooked(storedValue === "true");
+    };
+
+    checkFullyBooked();
+
+    // Listen for storage changes (in case admin page is open in another tab)
+    window.addEventListener("storage", checkFullyBooked);
+    return () => window.removeEventListener("storage", checkFullyBooked);
+  }, []);
   // Merge props with defaults
   const {
     title,
@@ -73,6 +90,16 @@ const CarouselHero: React.FC<CarouselHeroProps> = (props) => {
       className="w-full pt-20 md:pt-24"
       style={{ background: backgroundImage }}
     >
+      {/* Fully Booked Banner */}
+      {isFullyBooked && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm md:text-base shadow-lg"
+        >
+          We are currently fully booked
+        </motion.div>
+      )}
       <section className="flex flex-col md:flex-row md:min-h-[600px] lg:h-screen relative items-center mx-auto max-w-[1500px] gap-3 md:gap-4 px-4 py-4 md:py-6">
         {/* Left Text Section */}
         <section className="flex flex-col md:w-[45vw] lg:w-[40vw] justify-center items-start py-4 md:py-6 lg:py-8 px-4 md:px-5 lg:px-6 space-y-2 md:space-y-3">

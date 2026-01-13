@@ -27,15 +27,35 @@ const ContactCloser: React.FC<ContactCloserProps> = (props) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      setEmailInput("");
-      setMessage("");
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: emailInput,
+          message: message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setEmailInput("");
+        setMessage("");
+        setTimeout(() => setSubmitStatus("idle"), 3000);
+      } else {
+        setSubmitStatus("error");
+        setTimeout(() => setSubmitStatus("idle"), 3000);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
       setTimeout(() => setSubmitStatus("idle"), 3000);
-    }, 1000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
