@@ -11,8 +11,8 @@ import Accordion from "@/components/designs/textComponents/accordion/accordion";
 import GridCarousel from "@/components/designs/carousels/gridCarousel/gridCarousel";
 import Testimonials3 from "@/components/designs/testimonials/testimonials3/testimonials3";
 import ContactCloser from "@/components/designs/miscellaneous/contactCloser/contactCloser";
-import SparkleHome from "@/components/svg/SparkleHome";
-import PetFriendlyBadge from "@/components/svg/PetFriendlyBadge";
+// import SparkleHome from "@/components/svg/SparkleHome";
+// import PetFriendlyBadge from "@/components/svg/PetFriendlyBadge";
 import CleaningTransform from "@/components/svg/CleaningTransform";
 import {
   navbarData,
@@ -36,7 +36,7 @@ export default function IndexPage() {
           <CarouselHero {...carouselHeroData} />
         </section>
 
-        {/* Trust Badges Section */}
+        {/* Trust Badges Section - commented out for now
         <section className="py-8 md:py-12 bg-gradient-to-b from-white to-blue-50">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -61,6 +61,7 @@ export default function IndexPage() {
             </div>
           </div>
         </section>
+        */}
 
         <section id="about">
           <ExperienceCard {...experienceCardData} />
