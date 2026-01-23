@@ -147,14 +147,10 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
       </div>
 
       {/* Mobile Menu */}
-      <motion.div
-        initial={false}
-        animate={{
-          height: isMobileMenuOpen ? "auto" : 0,
-          opacity: isMobileMenuOpen ? 1 : 0,
-        }}
-        transition={{ duration: 0.3 }}
-        className="md:hidden overflow-hidden"
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}
         style={{ backgroundColor: baseBgColor ?? "#FFFFFF" }}
       >
         <div className="px-4 py-4 space-y-4">
@@ -184,7 +180,7 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
             </motion.button>
           )}
         </div>
-      </motion.div>
+      </div>
     </motion.nav>
   );
 };
