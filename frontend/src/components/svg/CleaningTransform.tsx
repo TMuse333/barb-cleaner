@@ -31,6 +31,7 @@ export default function CleaningTransform({
   }, []);
 
   useEffect(() => {
+    if (!mounted) return;
     let frame: number;
     const animate = (timestamp: number) => {
       setTime(timestamp / 1000);
@@ -38,7 +39,7 @@ export default function CleaningTransform({
     };
     frame = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(frame);
-  }, []);
+  }, [mounted]);
 
   const cy = height / 2 + 10;
 
@@ -277,8 +278,8 @@ export default function CleaningTransform({
           </g>
         ))}
 
-        {/* Dust clouds */}
-        {dustClouds.map((cloud, i) => (
+        {/* Dust clouds - only animate after mount */}
+        {mounted && dustClouds.map((cloud, i) => (
           <ellipse
             key={`cloud-${i}`}
             cx={cloud.x}
@@ -290,8 +291,8 @@ export default function CleaningTransform({
           />
         ))}
 
-        {/* Floating dust particles */}
-        {dustParticles.map((p, i) => (
+        {/* Floating dust particles - only animate after mount */}
+        {mounted && dustParticles.map((p, i) => (
           <circle
             key={`dust-${i}`}
             cx={p.x + Math.sin(time * p.speed + i) * 5}
@@ -382,8 +383,8 @@ export default function CleaningTransform({
           </g>
         ))}
 
-        {/* Sparkles */}
-        {sparkles.map((s, i) => {
+        {/* Sparkles - only animate after mount */}
+        {mounted && sparkles.map((s, i) => {
           const pulse = Math.sin(time * 3 + s.delay * 8);
           const isVisible = pulse > -0.2;
           return (

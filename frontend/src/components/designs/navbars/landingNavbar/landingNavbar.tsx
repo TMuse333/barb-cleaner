@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NavbarProps } from ".";
 
+const FULLY_BOOKED_KEY = "btq_fully_booked";
+
 const LandingNavbar: React.FC<NavbarProps> = (props) => {
   const {
     logoSrc,
@@ -22,6 +24,7 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isFullyBooked, setIsFullyBooked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +32,20 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Check localStorage for fully booked status
+  useEffect(() => {
+    const checkFullyBooked = () => {
+      const storedValue = localStorage.getItem(FULLY_BOOKED_KEY);
+      setIsFullyBooked(storedValue === "true");
+    };
+
+    checkFullyBooked();
+
+    // Listen for storage changes (in case admin page is open in another tab)
+    window.addEventListener("storage", checkFullyBooked);
+    return () => window.removeEventListener("storage", checkFullyBooked);
   }, []);
 
   const handleScrollTo = (scrollTo?: string) => {
@@ -61,18 +78,35 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
   };
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={`w-full z-50 transition-all duration-300 ${
-        sticky ? "fixed top-0" : "relative"
-      } ${isScrolled ? "shadow-lg" : ""}`}
-      style={{
-        backgroundColor: isScrolled ? baseBgColor ?? "#FFFFFF" : `${baseBgColor ?? "#FFFFFF"}F0`,
-        backdropFilter: isScrolled ? "blur(10px)" : "none",
-      }}
-    >
+    <>
+      {/* Fully Booked Banner - Always visible at top */}
+      {isFullyBooked && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={`bg-red-600 text-white text-center py-2 px-4 font-semibold text-sm md:text-base z-[60] ${
+            sticky ? "fixed top-0 w-full" : "relative"
+          }`}
+        >
+          <span className="inline-flex items-center gap-2">
+            <span className="animate-pulse">●</span>
+            We are currently fully booked — Please check back soon!
+          </span>
+        </motion.div>
+      )}
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`w-full z-50 transition-all duration-300 ${
+          sticky ? "fixed" : "relative"
+        } ${isScrolled ? "shadow-lg" : ""}`}
+        style={{
+          backgroundColor: isScrolled ? baseBgColor ?? "#FFFFFF" : `${baseBgColor ?? "#FFFFFF"}F0`,
+          backdropFilter: isScrolled ? "blur(10px)" : "none",
+          top: sticky && isFullyBooked ? "36px" : sticky ? "0" : undefined,
+        }}
+      >
       <div className="max-w-[1500px] mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - Left */}
@@ -182,6 +216,7 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
         </div>
       </div>
     </motion.nav>
+    </>
   );
 };
 

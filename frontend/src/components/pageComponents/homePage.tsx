@@ -1,7 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LandingNavbar from "@/components/designs/navbars/landingNavbar/landingNavbar";
+
+const FULLY_BOOKED_KEY = "btq_fully_booked";
 import LandingFooter from "@/components/designs/footers/landingFooter/landingFooter";
 import CarouselHero from "@/components/designs/herobanners/carouselHero/carouselHero";
 import ExperienceCard from "@/components/designs/contentPieces/experienceCard/experienceCard";
@@ -28,10 +30,23 @@ import {
 } from "@/data/homepage.data";
 
 export default function IndexPage() {
+  const [isFullyBooked, setIsFullyBooked] = useState(false);
+
+  useEffect(() => {
+    const checkFullyBooked = () => {
+      const storedValue = localStorage.getItem(FULLY_BOOKED_KEY);
+      setIsFullyBooked(storedValue === "true");
+    };
+
+    checkFullyBooked();
+    window.addEventListener("storage", checkFullyBooked);
+    return () => window.removeEventListener("storage", checkFullyBooked);
+  }, []);
+
   return (
     <>
       <LandingNavbar {...navbarData} />
-      <main className="mt-5 sm:mt-10 md:mt-16">
+      <main className={`${isFullyBooked ? "mt-14 sm:mt-16 md:mt-24" : "mt-5 sm:mt-10 md:mt-16"}`}>
         <section id="hero" className="">
           <CarouselHero {...carouselHeroData} />
         </section>
