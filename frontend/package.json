@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^7.0.4",
+    "@upstash/redis": "^1.36.2",
     "axios": "^1.12.2",
     "framer-motion": "^12.23.25",
     "lucide-react": "^0.546.0",
