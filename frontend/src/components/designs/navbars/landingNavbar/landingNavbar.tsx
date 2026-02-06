@@ -4,8 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NavbarProps } from ".";
-
-const FULLY_BOOKED_KEY = "btq_fully_booked";
+import { useBooking } from "@/context/BookingContext";
 
 const LandingNavbar: React.FC<NavbarProps> = (props) => {
   const {
@@ -24,7 +23,7 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isFullyBooked, setIsFullyBooked] = useState(false);
+  const { isFullyBooked } = useBooking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,20 +31,6 @@ const LandingNavbar: React.FC<NavbarProps> = (props) => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Check localStorage for fully booked status
-  useEffect(() => {
-    const checkFullyBooked = () => {
-      const storedValue = localStorage.getItem(FULLY_BOOKED_KEY);
-      setIsFullyBooked(storedValue === "true");
-    };
-
-    checkFullyBooked();
-
-    // Listen for storage changes (in case admin page is open in another tab)
-    window.addEventListener("storage", checkFullyBooked);
-    return () => window.removeEventListener("storage", checkFullyBooked);
   }, []);
 
   const handleScrollTo = (scrollTo?: string) => {

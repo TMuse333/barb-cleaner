@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { BookingProvider } from "@/context/BookingContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -54,7 +55,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <BookingProvider>{children}</BookingProvider>
+      </body>
     </html>
   )
 }

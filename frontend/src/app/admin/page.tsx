@@ -1,27 +1,19 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Lock, Unlock, Home, ToggleLeft, ToggleRight } from "lucide-react";
 import Link from "next/link";
+import { useBooking } from "@/context/BookingContext";
 
 const ADMIN_PASSWORD = "cleaner123!";
-const FULLY_BOOKED_KEY = "btq_fully_booked";
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isFullyBooked, setIsFullyBooked] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saved">("idle");
-
-  // Check localStorage on mount
-  useEffect(() => {
-    const storedValue = localStorage.getItem(FULLY_BOOKED_KEY);
-    if (storedValue !== null) {
-      setIsFullyBooked(storedValue === "true");
-    }
-  }, []);
+  const { isFullyBooked, setIsFullyBooked } = useBooking();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,9 +27,7 @@ export default function AdminPage() {
   };
 
   const handleToggle = () => {
-    const newValue = !isFullyBooked;
-    setIsFullyBooked(newValue);
-    localStorage.setItem(FULLY_BOOKED_KEY, String(newValue));
+    setIsFullyBooked(!isFullyBooked);
     setSaveStatus("saved");
     setTimeout(() => setSaveStatus("idle"), 2000);
   };
