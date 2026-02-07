@@ -1,17 +1,34 @@
-import { Redis } from "@upstash/redis";
+import { neon } from "@neondatabase/serverless";
 import { NextResponse } from "next/server";
 
-const redis = new Redis({
-  url: process.env.KV_REST_API_URL!,
-  token: process.env.KV_REST_API_TOKEN!,
-});
+const sql = neon(process.env.DATABASE_URL!);
 
-const BOOKING_STATUS_KEY = "btq_fully_booked";
+// Initialize settings table if it doesn't exist
+async function initTable() {
+  await sql`
+    CREATE TABLE IF NOT EXISTS settings (
+      key VARCHAR(100) PRIMARY KEY,
+      value TEXT NOT NULL,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+  `;
+
+  // Insert default value if not exists
+  await sql`
+    INSERT INTO settings (key, value)
+    VALUES ('is_fully_booked', 'false')
+    ON CONFLICT (key) DO NOTHING
+  `;
+}
 
 export async function GET() {
   try {
-    const isFullyBooked = await redis.get<boolean>(BOOKING_STATUS_KEY);
-    return NextResponse.json({ isFullyBooked: isFullyBooked ?? false });
+    await initTable();
+    const result = await sql`
+      SELECT value FROM settings WHERE key = 'is_fully_booked'
+    `;
+    const isFullyBooked = result[0]?.value === 'true';
+    return NextResponse.json({ isFullyBooked });
   } catch (error) {
     console.error("Error fetching booking status:", error);
     return NextResponse.json({ isFullyBooked: false });
@@ -20,8 +37,15 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
+    await initTable();
     const { isFullyBooked } = await request.json();
-    await redis.set(BOOKING_STATUS_KEY, isFullyBooked);
+
+    await sql`
+      UPDATE settings
+      SET value = ${String(isFullyBooked)}, updated_at = CURRENT_TIMESTAMP
+      WHERE key = 'is_fully_booked'
+    `;
+
     return NextResponse.json({ success: true, isFullyBooked });
   } catch (error) {
     console.error("Error setting booking status:", error);
