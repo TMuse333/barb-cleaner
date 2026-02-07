@@ -10,7 +10,7 @@ import TextAndList from "@/components/designs/textComponents/textAndList/textAnd
 import FeatureBoxes from "@/components/designs/textComponents/featureBoxes/featureBoxes";
 import Accordion from "@/components/designs/textComponents/accordion/accordion";
 import GridCarousel from "@/components/designs/carousels/gridCarousel/gridCarousel";
-import Testimonials3 from "@/components/designs/testimonials/testimonials3/testimonials3";
+import { DBTestimonials } from "@/components/designs/reviews";
 import ContactCloser from "@/components/designs/miscellaneous/contactCloser/contactCloser";
 // import SparkleHome from "@/components/svg/SparkleHome";
 // import PetFriendlyBadge from "@/components/svg/PetFriendlyBadge";
@@ -24,7 +24,6 @@ import {
   featureBoxesData,
   accordionData,
   gridCarouselData,
-  testimonials3Data,
   contactCloserData,
 } from "@/data/homepage.data";
 
@@ -104,7 +103,14 @@ export default function IndexPage() {
           <GridCarousel {...gridCarouselData} />
         </section>
         <section id="testimonials">
-          <Testimonials3 {...testimonials3Data} />
+          <DBTestimonials
+            title="What Our Clients Say"
+            description="Real reviews from satisfied customers"
+            mainColor="#3B82F6"
+            accentColor="#60A5FA"
+            ctaText="Leave a Review"
+            ctaLink="/reviews"
+          />
         </section>
         <section id="contact">
           <ContactCloser {...contactCloserData} />
