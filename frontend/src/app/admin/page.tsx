@@ -1,12 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Lock, Unlock, Home, ToggleLeft, ToggleRight } from "lucide-react";
+import { Lock, Unlock, Home, ToggleLeft, ToggleRight, Check, X, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useBooking } from "@/context/BookingContext";
 
 const ADMIN_PASSWORD = "cleaner123!";
+
+interface Review {
+  id: number;
+  name: string;
+  rating: number;
+  review: string;
+  approved: boolean;
+  created_at: string;
+}
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -14,6 +23,10 @@ export default function AdminPage() {
   const [error, setError] = useState("");
   const [saveStatus, setSaveStatus] = useState<"idle" | "saved">("idle");
   const { isFullyBooked, setIsFullyBooked } = useBooking();
+
+  // Reviews state
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [reviewsLoading, setReviewsLoading] = useState(false);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,6 +44,57 @@ export default function AdminPage() {
     setSaveStatus("saved");
     setTimeout(() => setSaveStatus("idle"), 2000);
   };
+
+  // Fetch reviews when authenticated
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchReviews();
+    }
+  }, [isAuthenticated]);
+
+  const fetchReviews = async () => {
+    setReviewsLoading(true);
+    try {
+      const response = await fetch("/api/reviews/admin");
+      const data = await response.json();
+      setReviews(data.reviews || []);
+    } catch (error) {
+      console.error("Error fetching reviews:", error);
+    } finally {
+      setReviewsLoading(false);
+    }
+  };
+
+  const handleApprove = async (id: number, approved: boolean) => {
+    try {
+      await fetch("/api/reviews/admin", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, approved }),
+      });
+      setReviews((prev) =>
+        prev.map((r) => (r.id === id ? { ...r, approved } : r))
+      );
+    } catch (error) {
+      console.error("Error updating review:", error);
+    }
+  };
+
+  const handleDelete = async (id: number) => {
+    if (!confirm("Are you sure you want to delete this review?")) return;
+    try {
+      await fetch("/api/reviews/admin", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      setReviews((prev) => prev.filter((r) => r.id !== id));
+    } catch (error) {
+      console.error("Error deleting review:", error);
+    }
+  };
+
+  const renderStars = (rating: number) => "★".repeat(rating) + "☆".repeat(5 - rating);
 
   // Password Screen
   if (!isAuthenticated) {
@@ -94,7 +158,7 @@ export default function AdminPage() {
   // Admin Dashboard
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-4">
-      <div className="max-w-2xl mx-auto pt-12">
+      <div className="max-w-4xl mx-auto pt-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -123,13 +187,13 @@ export default function AdminPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="bg-white rounded-2xl shadow-xl p-8"
+          className="bg-white rounded-2xl shadow-xl p-8 mb-8"
         >
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
             Availability Status
           </h2>
           <p className="text-gray-600 mb-6">
-            Toggle this to show or hide the "Fully Booked" banner on your website.
+            Toggle this to show or hide the &quot;Fully Booked&quot; banner on your website.
           </p>
 
           <div className="flex items-center justify-between p-6 bg-gray-50 rounded-xl">
@@ -178,6 +242,95 @@ export default function AdminPage() {
                 We are currently fully booked
               </div>
             </motion.div>
+          )}
+        </motion.div>
+
+        {/* Reviews Management Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="bg-white rounded-2xl shadow-xl p-8"
+        >
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Review Management
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Approve or reject customer reviews before they appear on your website.
+          </p>
+
+          {reviewsLoading ? (
+            <div className="flex justify-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+            </div>
+          ) : reviews.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No reviews yet
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {reviews.map((review) => (
+                <div
+                  key={review.id}
+                  className={`p-4 rounded-xl border-2 ${
+                    review.approved
+                      ? "border-green-200 bg-green-50"
+                      : "border-yellow-200 bg-yellow-50"
+                  }`}
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <span className="font-semibold text-gray-900">{review.name}</span>
+                      <span className="ml-2 text-yellow-500">{renderStars(review.rating)}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`text-xs px-2 py-1 rounded-full ${
+                          review.approved
+                            ? "bg-green-200 text-green-800"
+                            : "bg-yellow-200 text-yellow-800"
+                        }`}
+                      >
+                        {review.approved ? "Approved" : "Pending"}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 text-sm mb-3">&quot;{review.review}&quot;</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-gray-500">
+                      {new Date(review.created_at).toLocaleDateString()}
+                    </span>
+                    <div className="flex gap-2">
+                      {!review.approved && (
+                        <button
+                          onClick={() => handleApprove(review.id, true)}
+                          className="p-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+                          title="Approve"
+                        >
+                          <Check size={16} />
+                        </button>
+                      )}
+                      {review.approved && (
+                        <button
+                          onClick={() => handleApprove(review.id, false)}
+                          className="p-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors"
+                          title="Unapprove"
+                        >
+                          <X size={16} />
+                        </button>
+                      )}
+                      <button
+                        onClick={() => handleDelete(review.id)}
+                        className="p-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+                        title="Delete"
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           )}
         </motion.div>
 
