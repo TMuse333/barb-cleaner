@@ -93,6 +93,10 @@ export const experienceCardData: ExperienceCardProps = {
     },
     {
       type: "StandardText",
+      title: "Clients must be Smoke Free / Vape Free due to allergies!"
+    },
+    {
+      type: "StandardText",
       title: "Bonded, Dependable & Reliable"
     },
     {
