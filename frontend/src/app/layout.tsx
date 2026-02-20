@@ -66,6 +66,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'nvnZ4JWtTBg7JAoI1G9BPXkRLZ2A12reck6lSYz5i6U',
+  },
 }
 
 // Structured data for Local Business (helps Google understand this is a local service)
