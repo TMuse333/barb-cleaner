@@ -2,6 +2,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { BookingProvider } from "@/context/BookingContext";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -130,6 +131,7 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         <BookingProvider>{children}</BookingProvider>
+        <Analytics />
       </body>
     </html>
   )
